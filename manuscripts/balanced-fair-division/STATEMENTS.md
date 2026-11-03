@@ -1,17 +1,9 @@
-# Statements
+# Balanced Fair Division manuscript
 
-Formal statements and hypotheses for the Balanced Fair Division manuscript:
-
-- [Principal existence theorems](../../lean/FairDivision/BF/MainTheorems.lean)
-- [Goods and chores EF1](../../lean/FairDivision/BF/MonotoneFairness.lean)
-- [Sharp swap threshold](../../lean/FairDivision/BF/SwapThreshold.lean)
-- [Replacement fairness](../../lean/FairDivision/BF/ReplacementFairnessExistence.lean)
-- [Equal capacities](../../lean/FairDivision/BF/Applications/Capacities.lean)
-- [Graph-density partitions](../../lean/FairDivision/BF/Applications/DensityExistence.lean)
-- [Nonlinear discrepancy](../../lean/FairDivision/BF/Applications/NonlinearDiscrepancy.lean)
-- [Sparse coverage](../../lean/FairDivision/BF/Applications/Coverage.lean)
-- [Equal-parameter induced subgraphs](../../lean/FairDivision/BF/Applications/EqualParametersGraphs.lean)
-
-[Definitions](../../lean/FairDivision/Definitions.lean) · [All 47 audited endpoints](../../lean/verification/expected-endpoints.json)
-
-The certificate build and 47-endpoint axiom audit [passed](https://github.com/nisarg89/Lean/actions/runs/41530290076), using only `propext`, `Classical.choice` and `Quot.sound`.
+- **[Identical valuations, prime-power agents](../../lean/FairDivision/BF/MainTheorems.lean).** For every prime-power number of agents and every finite set of items, arbitrary identical valuations admit a balanced EF[1,1] allocation.
+- **[Identical valuations, any number of agents](../../lean/FairDivision/BF/MainTheorems.lean).** For every positive number of agents and every finite set of items, arbitrary identical valuations admit a balanced EF[1,1] allocation.
+- **[Heterogeneous valuations](../../lean/FairDivision/BF/MainTheorems.lean).** For every prime-power number of agents and every finite set of items, arbitrary heterogeneous valuations admit a balanced EF[1,1] allocation.
+- **[Swaps](../../lean/FairDivision/BF/SwapThreshold.lean).** For $t\ge1$ and bundles of size $q$, balanced $t$-swap-EF allocations always exist if $q\le2t$. If $q\ge2t+1$, for every sufficiently large number of agents, some identical valuation admits none.
+- **[Bounded value spread](../../lean/FairDivision/BF/Applications/NonlinearDiscrepancy.lean).** If adding an item changes a real-valued set function by at most $L\ge0$, every positive number of parts admits a balanced partition with value spread at most $2L$, or $L$ for monotone functions. Both constants are sharp.
+- **[Equal graph parameters](../../lean/FairDivision/BF/Applications/EqualParametersGraphs.lean).** If an integer graph parameter decreases by zero or one when a vertex is deleted, every $N$-vertex graph and $1\le k\le N/2$ admit $k$ disjoint induced subgraphs of order $\lfloor N/k\rfloor-1$ with equal parameter values.
+- **[Graph densities](../../lean/FairDivision/BF/Applications/DensityExistence.lean).** For $2\le k\le N$, write $N=kr+s$ with $0\le s<k$. Every $N$-vertex simple graph admits a balanced $k$-partition with spread in densities $|E(G[S])|/|S|$ at most $1-1/r$ if $s=0$ or $s=1$ and $r\ge2$, and $1-1/(r+1)$ otherwise. These bounds are sharp for every $N,k$.
