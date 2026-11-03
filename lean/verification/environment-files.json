@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "e24546d10cbd0ac75c14717af324ee579234f1e3d9e222fa6ad47761d73727a5"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "568aa183ac7aad33e25071eb6210ba1481939051f773c6765073ce717b2158c3"
+    },
+    {
+      "path": "third_party/dkgm-topology-source/lakefile.toml",
+      "sha256": "163791e37e78a2036083e3a5e01d3cf7c9f3d2b574786c64b9731a8a8c45a88d"
+    },
+    {
+      "path": "third_party/dkgm-topology-source/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    }
+  ]
+}

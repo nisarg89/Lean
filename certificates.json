@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "workspace": "lean",
+  "papers": {
+    "BF": {
+      "title": "Balanced Fair Division",
+      "reader": "manuscripts/balanced-fair-division/README.md",
+      "status": "build-and-axiom-audit-passed",
+      "regression_required": true,
+      "target": "FairDivision.BF.Certificate",
+      "audit_file": "FairDivision/BF/CertificateAudit.lean",
+      "endpoints": "lean/verification/expected-endpoints.json",
+      "audit_checker": "lean/scripts/check_axioms.py",
+      "comparator": "lean/ComparatorChallenges/BalancedFairDivision.json",
+      "semantic_baseline": null,
+      "accepted_proof_source": "lean/verification/accepted-server-result.json"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+**/.lake/
+**/.elan/
+**/artifacts/
+.DS_Store
+*.olean
+*.ilean
+*.trace
+*.ndjson
+*.tar.gz
+__pycache__/

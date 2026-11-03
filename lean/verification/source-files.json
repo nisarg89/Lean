@@ -1,0 +1,2761 @@
+{
+  "lean": "leanprover/lean4:v4.35.0",
+  "original_source_archive_sha256": "c72ec2d1167a5d91de1d9b2e415710e1721a88b90a1f555c6054f7868f3c753e",
+  "accepted_closure_files": 456,
+  "files": [
+    {
+      "module": "ComparatorChallenges.BalancedFairDivision",
+      "path": "ComparatorChallenges/BalancedFairDivision.lean",
+      "sha256": "0488808b7c25e23a03eccf760b356759209d060a199473b1a24f3c01e43d6663",
+      "origin": "release-statement-challenge-not-a-proof"
+    },
+    {
+      "module": "FairDivision",
+      "path": "FairDivision.lean",
+      "sha256": "3eb3c7471ed13c1f067feddb320fcd87f7379bb744fee26b07d26f0ff2340adb",
+      "origin": "release-import-facade"
+    },
+    {
+      "module": "FairDivision.BF.AlmostEnvyFreeScores",
+      "path": "FairDivision/BF/AlmostEnvyFreeScores.lean",
+      "sha256": "c17e3ed503633ea52350199cf1b00a870449b913f64cbd96baae7990f5b2f7e7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.AlmostEnvyFreeScoresEquivariance",
+      "path": "FairDivision/BF/AlmostEnvyFreeScoresEquivariance.lean",
+      "sha256": "e47eccb582de48971d9089b6391d556c6500c7404bbf4de8155905966b8f56d3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.AlmostEnvyFreeScoresTopology",
+      "path": "FairDivision/BF/AlmostEnvyFreeScoresTopology.lean",
+      "sha256": "dc4f96b6d4bc09b91af363fc934f4504dfe7631b9364c23efc9ad454baa10e63",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.Capacities",
+      "path": "FairDivision/BF/Applications/Capacities.lean",
+      "sha256": "fe32f1dccfd9a74e06a6296c6af567fa3919d9608be7eac7e4c8c302324a49b3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.Coverage",
+      "path": "FairDivision/BF/Applications/Coverage.lean",
+      "sha256": "9f449b8f6ef1090ac163c7c2b848305151d25ac3acdd036da9313c423dc24e71",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensityDeletionGrid",
+      "path": "FairDivision/BF/Applications/DensityDeletionGrid.lean",
+      "sha256": "abd56da4ba8477a297cede07ceec94fe45023d9352e01787d8784a18dd1d0953",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensityExistence",
+      "path": "FairDivision/BF/Applications/DensityExistence.lean",
+      "sha256": "a7bf91029c753209a087877701f20088bbd391f8a5215e42b3b477559d90ad93",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensityPartition",
+      "path": "FairDivision/BF/Applications/DensityPartition.lean",
+      "sha256": "ac6900396687b55e82e5784eb48e1e4945d3201e5d0c9f329510d5de11226436",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensitySharpness",
+      "path": "FairDivision/BF/Applications/DensitySharpness.lean",
+      "sha256": "819bc953273e96bab6680619cce4bf11375899bc356873590df5e276c361c897",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensitySharpnessGraphs",
+      "path": "FairDivision/BF/Applications/DensitySharpnessGraphs.lean",
+      "sha256": "9663fb56cff79b23e41e95d4e5f320ebe5d376bb9bef45bbf6a2437a97528242",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensitySharpnessSizes",
+      "path": "FairDivision/BF/Applications/DensitySharpnessSizes.lean",
+      "sha256": "7d557779263aebb738db64a8916f90a3e157827350efa76007bde8e740a2204d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensitySingleRemainder",
+      "path": "FairDivision/BF/Applications/DensitySingleRemainder.lean",
+      "sha256": "667da2e3aaebd207973dc71443555f3c31abbe622410099af815dc29a869d73d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DensitySingleRemainderClassification",
+      "path": "FairDivision/BF/Applications/DensitySingleRemainderClassification.lean",
+      "sha256": "d3481a80f3295a7e08131d3d7180cc9af6fafb294902417cb67ae42e154c8956",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.DiscrepancySharpness",
+      "path": "FairDivision/BF/Applications/DiscrepancySharpness.lean",
+      "sha256": "e71bb2c80b0cf59d638794ba955051debd936306c96cec2ff0886b9d9c265766",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.EqualParameters",
+      "path": "FairDivision/BF/Applications/EqualParameters.lean",
+      "sha256": "fe183416712285d393c85771e0450f486b5d7e39e0cfd85f42be13da02f4232e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.EqualParametersGraphs",
+      "path": "FairDivision/BF/Applications/EqualParametersGraphs.lean",
+      "sha256": "7ffa4f13ca253b9f8b1ee55d6d42440d7905955e7cdc33454831048b1884932a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.GraphDensityBasics",
+      "path": "FairDivision/BF/Applications/GraphDensityBasics.lean",
+      "sha256": "593b417c25a44549d4f91618440ac9d0b0f8c21457701fc152bc770f98940a2e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.GraphDensityStarDescent",
+      "path": "FairDivision/BF/Applications/GraphDensityStarDescent.lean",
+      "sha256": "79c56776d7cbae9b24f9e5248199a93c5704588881a9e3041074b63a57e29fa3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.GraphDensityTransfer",
+      "path": "FairDivision/BF/Applications/GraphDensityTransfer.lean",
+      "sha256": "b93fe29ff49b5bebf7d55aad920b4c155e685f38587baf4c6119d5658b4d40b2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.GraphDensityWindows",
+      "path": "FairDivision/BF/Applications/GraphDensityWindows.lean",
+      "sha256": "1f688993918199b513b1b1f0f6d7da0759556e73cacc06047e43af9368573102",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Applications.NonlinearDiscrepancy",
+      "path": "FairDivision/BF/Applications/NonlinearDiscrepancy.lean",
+      "sha256": "fdb6dc827740269aafbe6f7e02f7cbfb4a8cf223f31174d5746b1997f7b26d29",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.ApproximateLimit",
+      "path": "FairDivision/BF/ApproximateLimit.lean",
+      "sha256": "969aa313783f9bf6be2918ae9c399384e17829c611e2f0cf7785486992220fc8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.ApproximateScoresToExact",
+      "path": "FairDivision/BF/ApproximateScoresToExact.lean",
+      "sha256": "c17d9722f7fc53411215728868fb12eb6a3fc59abbb57a404254c221376099e3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.AugmentedExistence",
+      "path": "FairDivision/BF/AugmentedExistence.lean",
+      "sha256": "fb30629285dc695f55af9f52d045a7306d711bf5c937eaef31ea7735492e18d7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.AuxiliaryCompactness",
+      "path": "FairDivision/BF/AuxiliaryCompactness.lean",
+      "sha256": "54bd6bb78d7de5a63badff5e1140cd1c9af29ba357128a9f2c6936623a54855f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Certificate",
+      "path": "FairDivision/BF/Certificate.lean",
+      "sha256": "d785283b8ce0450abf2d0ea98cb959e3cb9fc92504a6fbc646e66fb14f342dfa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.CertificateAudit",
+      "path": "FairDivision/BF/CertificateAudit.lean",
+      "sha256": "2dac7418c4368aad3c82af4e605102ef82dd7a08f46f83e54cada52f50441f8f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.CompactMaxAdmissibility",
+      "path": "FairDivision/BF/CompactMaxAdmissibility.lean",
+      "sha256": "e76ed8cfc63c26ba0a1ec6c6ba0928475294c248c8e1c6f52ed99b8a72a0e2e5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.ConditionalPrimePowerExistence",
+      "path": "FairDivision/BF/ConditionalPrimePowerExistence.lean",
+      "sha256": "52f281972370532519f51b77da096b221b71fe5864632dadb88497790fe67e8f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.EqualizingScores",
+      "path": "FairDivision/BF/EqualizingScores.lean",
+      "sha256": "88be89d27d349180476714f7a3df827f020f734cebe50bc0d21f73a0d57bf0d0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Existence",
+      "path": "FairDivision/BF/Existence.lean",
+      "sha256": "0bfe97a312edc439269992bb97b4872b688acf923ce4ffdc2e8b6ec98cf565d3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousAdmissibility",
+      "path": "FairDivision/BF/HeterogeneousAdmissibility.lean",
+      "sha256": "0071905db9ea59650593dca312651126d7d3d8be70d95654c67cbec55de462d3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousBalanceCount",
+      "path": "FairDivision/BF/HeterogeneousBalanceCount.lean",
+      "sha256": "439bc91b1a51392f517f1c56f03dc12b42c298b5d4b7a56d1269357a9ad3f69d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousBrackets",
+      "path": "FairDivision/BF/HeterogeneousBrackets.lean",
+      "sha256": "646b0206969e6a68ae32c0045e39947580bd44fa4c2edfeaa10d80ba781730c4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousDummyProjection",
+      "path": "FairDivision/BF/HeterogeneousDummyProjection.lean",
+      "sha256": "300df6c69ad970d70be2aba500a1cdb49a10538c5a744cdceeae1b2ee4c69ca0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousExchangeChain",
+      "path": "FairDivision/BF/HeterogeneousExchangeChain.lean",
+      "sha256": "707cc86f99e8bff2ca49fcca0735d14b46d5f83b7325e4747ed7eee0df6835ce",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousExchangePath",
+      "path": "FairDivision/BF/HeterogeneousExchangePath.lean",
+      "sha256": "f17da5c33ff0b049e2d154bdc51b02051af0906e19825e1d621a644ff6b49fd7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousExistenceFromObstruction",
+      "path": "FairDivision/BF/HeterogeneousExistenceFromObstruction.lean",
+      "sha256": "36cb19754a582c5af814eb5bd8097fae1734a1ea037a8177a0a84c1b6b779934",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousFinalBalance",
+      "path": "FairDivision/BF/HeterogeneousFinalBalance.lean",
+      "sha256": "e8fd071d0b6f8acd92d1524ecf342578bfb7f2adcffdfb844cf6e04fd03cb6e8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousFiniteConversion",
+      "path": "FairDivision/BF/HeterogeneousFiniteConversion.lean",
+      "sha256": "f0a68c290a0fcc3aad34baec0e5d5a9090682eb72354b93c9fcdac21e6300697",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousFiniteEndpoint",
+      "path": "FairDivision/BF/HeterogeneousFiniteEndpoint.lean",
+      "sha256": "a7d189a2ff4a61f9becdb525d46b2c05dc41c6fade17a38fbea723918274785e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousNoDummyEndpoint",
+      "path": "FairDivision/BF/HeterogeneousNoDummyEndpoint.lean",
+      "sha256": "21d43013ce68d4619ab3ef502695dba79299253332d915379d7bcf5cceb70b49",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousOneSkeleton",
+      "path": "FairDivision/BF/HeterogeneousOneSkeleton.lean",
+      "sha256": "4ac63f6ada54405d6c672f7fe1a291dc7a9452e43db8e0316261089b633f3f84",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousPositionDummyEndpoint",
+      "path": "FairDivision/BF/HeterogeneousPositionDummyEndpoint.lean",
+      "sha256": "84ce7ef624c2275f58f039c2b703554a574edf1a5f49780f362950c362c863fd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousRealCompletion",
+      "path": "FairDivision/BF/HeterogeneousRealCompletion.lean",
+      "sha256": "db4e1708eda7e96cf678a8db02946f36bf6580231c5c88cc376591342f386937",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousRealCount",
+      "path": "FairDivision/BF/HeterogeneousRealCount.lean",
+      "sha256": "3f33bfb24b40f5c53bd3f0da9296f2e2b0a8b16b9f7ec7c21af76f396f70deea",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousRealState",
+      "path": "FairDivision/BF/HeterogeneousRealState.lean",
+      "sha256": "ba0bb5d09eb7b3896b3a38291c4e2a7cfc06947af968edb86c53472bc069ef7a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousRebalanceCompletion",
+      "path": "FairDivision/BF/HeterogeneousRebalanceCompletion.lean",
+      "sha256": "4bafcf6a9e1a494a5bfdb0a2e13480e3aa40bfa39cc322d054d9871f393ca09f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousRebalanceStep",
+      "path": "FairDivision/BF/HeterogeneousRebalanceStep.lean",
+      "sha256": "2b36e8967236eea9b4a7eb234f1c6278fab3f9da1eb10a8208ed562e116a295e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousReindex",
+      "path": "FairDivision/BF/HeterogeneousReindex.lean",
+      "sha256": "307a882c0dc2f39155bbf795625070484033e3d465ef69d58ad415e2bd1efaec",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousShorteningCompletion",
+      "path": "FairDivision/BF/HeterogeneousShorteningCompletion.lean",
+      "sha256": "dc26d61dec7abd749c893db11bbe3ed28f030d9e59498ad59f13ff2f261db214",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousShorteningState",
+      "path": "FairDivision/BF/HeterogeneousShorteningState.lean",
+      "sha256": "1659875faa1ec66192f0b76a0f00dbef2f198624f8fea909151f3df1df91b585",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousTransfer",
+      "path": "FairDivision/BF/HeterogeneousTransfer.lean",
+      "sha256": "e199820ff0f6b1666f993517605a46ff6a4fdf9e058bf9c0ff0abcc59acdb19c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.HeterogeneousWitnessComparison",
+      "path": "FairDivision/BF/HeterogeneousWitnessComparison.lean",
+      "sha256": "cda8a85a202dd365cc53943fa35f06e6cb114d7b3c6bc3d32b8e34a5551f1033",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.IdenticalExistence",
+      "path": "FairDivision/BF/IdenticalExistence.lean",
+      "sha256": "c0201acd1bad1a2613547290272605c1a7ff61eec513c433c9cd7ec68980253f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.MainTheorems",
+      "path": "FairDivision/BF/MainTheorems.lean",
+      "sha256": "54eca8705cb387d488ae30c8960f9809349b8f25007e8d187c8815272b27ba1b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.MonotoneFairness",
+      "path": "FairDivision/BF/MonotoneFairness.lean",
+      "sha256": "d0f247ce8324f631cc4ed5fe4b465b9fd6f4999f4c50a0d677cb3bca7690f12c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.PaddingArithmetic",
+      "path": "FairDivision/BF/PaddingArithmetic.lean",
+      "sha256": "b2848c0ad56950df6e21aa536a7cc6d6322292ede44f12261fe6b2e2cd0cf0f6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.PrimePowerHeterogeneousExistence",
+      "path": "FairDivision/BF/PrimePowerHeterogeneousExistence.lean",
+      "sha256": "66d9c4e7f8719c48ca08b0cfc4fa69bd029f085207440c40853be31976cf508e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.PrimePowerIdenticalExistence",
+      "path": "FairDivision/BF/PrimePowerIdenticalExistence.lean",
+      "sha256": "bef0d11eb7b9cdf1697684d32719a318760fd78ecdb319e98e15550b12f3ce17",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.PrimePowerTopologicalEqualization",
+      "path": "FairDivision/BF/PrimePowerTopologicalEqualization.lean",
+      "sha256": "4270b0a72ca1063e8f33ce03136dcb8beef2d7984a640455c25dcfe790517c9e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.AAKPathwise",
+      "path": "FairDivision/BF/Recording/AAKPathwise.lean",
+      "sha256": "de16a15606bee5798dee4aec95632a6db5fb35c1e0d9b42c8fbb79b50f93cf84",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ActualDummyRemoval",
+      "path": "FairDivision/BF/Recording/ActualDummyRemoval.lean",
+      "sha256": "e80e040f01b71e96e1e25f7c7e2f89b55d361a69f7db1f6ba060b60bb7f80896",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.AvailableAction",
+      "path": "FairDivision/BF/Recording/AvailableAction.lean",
+      "sha256": "d831265a7e6dd6b42cb639e0d0b6eee81af85a39e13a5017b24f1a1ae5e6b8da",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.AvailableConnectivity",
+      "path": "FairDivision/BF/Recording/AvailableConnectivity.lean",
+      "sha256": "3c3d9bb5f8dd25e4498fe990b09fe911c1133a77902e5f913b1e0390e28bdca5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ChildLotteryBank",
+      "path": "FairDivision/BF/Recording/ChildLotteryBank.lean",
+      "sha256": "9e94c0b99a8a252d3c2f893b67f0430a8449eda4f83d34f8704b65bf2e443671",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ChildProfiles",
+      "path": "FairDivision/BF/Recording/ChildProfiles.lean",
+      "sha256": "c50145a0b67d12dfd91819357184150f42f4d1a6ab433605a4a9fcbb9c3aebe3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ChildScores",
+      "path": "FairDivision/BF/Recording/ChildScores.lean",
+      "sha256": "e5891484a82f4502d9a373e4b4a0f391d64dabd158a4ebf9a3b1022874442466",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ExchangePaths",
+      "path": "FairDivision/BF/Recording/ExchangePaths.lean",
+      "sha256": "5c86432a372a04077538cf44a4b5da674931dcf7bd588463c67a277b3faa85bd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.Function",
+      "path": "FairDivision/BF/Recording/Function.lean",
+      "sha256": "f0bf75960182c0ec3b98d35241693af165bbc1f987c7b9e22d84811a25178f6f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.Graph",
+      "path": "FairDivision/BF/Recording/Graph.lean",
+      "sha256": "ada07249bcc5de56b249d512db0a99ede1b0c7d5331a903b555bfdb95ce050b7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.GraphFamily",
+      "path": "FairDivision/BF/Recording/GraphFamily.lean",
+      "sha256": "57995f457b6621bf957565655b41ce5ece5cef7482b793e7f516127da1f906fa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.GraphGeometry",
+      "path": "FairDivision/BF/Recording/GraphGeometry.lean",
+      "sha256": "449179a7d4c5be43b9a3d33c9545b89affb7e6ee7870e2922366deabde2016c6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.Leaf",
+      "path": "FairDivision/BF/Recording/Leaf.lean",
+      "sha256": "b1544864e8bdae30772ec8427914885b6e96ab9f4e717aedf628128d81e64f57",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ParentRecorder",
+      "path": "FairDivision/BF/Recording/ParentRecorder.lean",
+      "sha256": "438b22f42256e8a379547e2a059f843f5b228b76e62cb3a8d8c950534c3084d7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.PrimeFactorRecording",
+      "path": "FairDivision/BF/Recording/PrimeFactorRecording.lean",
+      "sha256": "1cb7250691ddc8de2c4a4d823f64933f6fcd46c67b07775d9948d053f626879e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.PrimeFactorRecursion",
+      "path": "FairDivision/BF/Recording/PrimeFactorRecursion.lean",
+      "sha256": "a6819b311310939b0cd0c151f995330e90c205502461b6e43e31dbfec4b323ea",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.PrimeMultiplication",
+      "path": "FairDivision/BF/Recording/PrimeMultiplication.lean",
+      "sha256": "69f50770f847f4c513215f4208fe6d56e7f1d917168d7fbe64e93b4a616479bc",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.RealItemCoordinates",
+      "path": "FairDivision/BF/Recording/RealItemCoordinates.lean",
+      "sha256": "ed16a61ca5ab963e91994a80bb79060712288500de7a940964e4746facc40f92",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ReserveRelabel",
+      "path": "FairDivision/BF/Recording/ReserveRelabel.lean",
+      "sha256": "9fc7ee9587b13bb10cb218d340e13aa6ad5cf8b8981124bc7f25d00023d5114e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.RootPool",
+      "path": "FairDivision/BF/Recording/RootPool.lean",
+      "sha256": "81d3d228bd078e58167e418564d81ad330792d989749c2c2b7fd0a88d7a7df7b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.RootPoolRealization",
+      "path": "FairDivision/BF/Recording/RootPoolRealization.lean",
+      "sha256": "f172b63baf2dcc111895f30f3ec4c9df32be56146e38383fb0e71bb4341504ee",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.RootZero",
+      "path": "FairDivision/BF/Recording/RootZero.lean",
+      "sha256": "31be2bb9bc3f6726688af0107d549e24a4a6ffb1b1a7f838c5473f5339e3f977",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.StockProfileRealization",
+      "path": "FairDivision/BF/Recording/StockProfileRealization.lean",
+      "sha256": "9da6d15500a4448d681f818ea7d6ad1a1f527850a29a16e8aa0073fc290f1ced",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.VertexAndEdgeMaps",
+      "path": "FairDivision/BF/Recording/VertexAndEdgeMaps.lean",
+      "sha256": "169e2696b255ae5540b3a0c82561dc9a337f19cd22cb8d67148fed29c3d7da85",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.Recording.ZeroInPool",
+      "path": "FairDivision/BF/Recording/ZeroInPool.lean",
+      "sha256": "bf96682978481f9ea57a702a4940f7f2a940a60cd5bf5889c0fe7a414c446221",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.ReplacementCompletionExtensions",
+      "path": "FairDivision/BF/ReplacementCompletionExtensions.lean",
+      "sha256": "05101c93a424ae0e0ae560e72da1f793c32c50fba5186bea633a2bc4cd780833",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.ReplacementFairnessExistence",
+      "path": "FairDivision/BF/ReplacementFairnessExistence.lean",
+      "sha256": "f6f7fb82c3b70408890f358c2733667527737f149a3cad1df4b005b7cab02570",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.ReplacementFairnessWitness",
+      "path": "FairDivision/BF/ReplacementFairnessWitness.lean",
+      "sha256": "2831720778ebecf269b71c8b058cdd68972bc685f016d39e6654edf4082eaf7a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapConditionalProbability",
+      "path": "FairDivision/BF/SwapConditionalProbability.lean",
+      "sha256": "07ae6f189d461c602fc59c67054953243a9f5c678ffc84700134c6e856b07c8e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapDefinitions",
+      "path": "FairDivision/BF/SwapDefinitions.lean",
+      "sha256": "81f238d5d33d73f97d1bb63c4642d8bfc68b31f4fd4921355788e1ddecbc6acc",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapFirstMomentAsymptotic",
+      "path": "FairDivision/BF/SwapFirstMomentAsymptotic.lean",
+      "sha256": "93ae252f40003664b5324fe8ab0ac8466969a1a217e2c6b2f334017a01198cc6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapMixedCount",
+      "path": "FairDivision/BF/SwapMixedCount.lean",
+      "sha256": "f913fa76cc9764c3057d1eb100ba7e1a3383c9c019d61f7543b9c97ca2be462e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapObstruction",
+      "path": "FairDivision/BF/SwapObstruction.lean",
+      "sha256": "32a84f40d44c304975e1d7c28e2ab2f0edaa68c229cc8db1e78a99ef90c5e980",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapPerturbedValuation",
+      "path": "FairDivision/BF/SwapPerturbedValuation.lean",
+      "sha256": "0b497c4f3037d8da656d4e8f80b9ad7b8f430a04a119e0e9b507f0d54c758aee",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapThreshold",
+      "path": "FairDivision/BF/SwapThreshold.lean",
+      "sha256": "3cc7904f2746f2bcb040417397bc2b7f8421e7ea34cfdbe197c047de772924ff",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapThresholdNegative",
+      "path": "FairDivision/BF/SwapThresholdNegative.lean",
+      "sha256": "22c39112cc32affd920b2bb2c450b6cfb3285cc3bc6b8eca1b07779986c6a281",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapThresholdPositive",
+      "path": "FairDivision/BF/SwapThresholdPositive.lean",
+      "sha256": "8ade50a7bb28861aa1eba5c8b58e4752edf4ec4ab9833a91130915a8b06eb384",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.SwapUnconditionalProbability",
+      "path": "FairDivision/BF/SwapUnconditionalProbability.lean",
+      "sha256": "bee512f69610d94ec22e1f1b610044a4af7cfb150933340a841f88179888f8fd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualDummyTransport",
+      "path": "FairDivision/BF/VirtualDummyTransport.lean",
+      "sha256": "78e96af8fcbb7bb52373f50ea1318fc0987f185eeee1667bc8152cdb0615ba3b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualExistenceFromObstruction",
+      "path": "FairDivision/BF/VirtualExistenceFromObstruction.lean",
+      "sha256": "15cb3afc83d4f55f5548a98388088c4b09e0a71cc136f63b69584dff93594133",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualNoDummyTransport",
+      "path": "FairDivision/BF/VirtualNoDummyTransport.lean",
+      "sha256": "5e0daec532ce907ff9227c051b317dd8014c2a424f0b0705dd1f2f076a5a881f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualPoolTransport",
+      "path": "FairDivision/BF/VirtualPoolTransport.lean",
+      "sha256": "6d1cf0792636fe855174fc521b9138511beb98b89317268aa023915311f87764",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualScoreBridge",
+      "path": "FairDivision/BF/VirtualScoreBridge.lean",
+      "sha256": "8bc623c2f759f5362180bd6a88637c43f3385a79950909def598d6aa7b4f9d97",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualTopologicalEqualization",
+      "path": "FairDivision/BF/VirtualTopologicalEqualization.lean",
+      "sha256": "b293cd84a720eacf4da20d1b492ea43efcbe3386e5bffe9b6ee9537aa75d518b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualValuationConstruction",
+      "path": "FairDivision/BF/VirtualValuationConstruction.lean",
+      "sha256": "4c29d1cd2186b754d29a9f263aa0f60e594b45d31b7025e91298d4095adfc7c2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualValuationSkeleton",
+      "path": "FairDivision/BF/VirtualValuationSkeleton.lean",
+      "sha256": "da78efe3d2ce63608f5c4c2c85c930e61c96268fbe12818f9feb82610d059b69",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualValuationSpec",
+      "path": "FairDivision/BF/VirtualValuationSpec.lean",
+      "sha256": "2ffba5fe4c0b6c7f95a0b21d370b45edabf95e758c5825539871146de1abc111",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualWitnessAllDummyCounts",
+      "path": "FairDivision/BF/VirtualWitnessAllDummyCounts.lean",
+      "sha256": "115159b446cf8037e5bbe63cef91d7c448f0acc5562df2620ca2782bf41a8d37",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.BF.VirtualWitnessConversion",
+      "path": "FairDivision/BF/VirtualWitnessConversion.lean",
+      "sha256": "67ffc72c8a1608d38c3242501f3da37849795999debfed2c7dc663e94eb0757e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Basic",
+      "path": "FairDivision/Basic.lean",
+      "sha256": "841de7d44b9a9bc5a826f7233027a1c972832f6444319cb39a91e103ef1b9fc5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Definitions",
+      "path": "FairDivision/Definitions.lean",
+      "sha256": "4c9e1ba36227f436331f0eb85f19b374142aaf03862e59ca7d5a231aec653648",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.AllocationCast",
+      "path": "FairDivision/Finite/AllocationCast.lean",
+      "sha256": "777a240ec9c8e823535c0185d4059e0024e00c83d74942bbbd69c0be9eb8c115",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.BalancedExistence",
+      "path": "FairDivision/Finite/BalancedExistence.lean",
+      "sha256": "be3b87e10bbcf806859844e1bec0b8a4eeb46dec2158d85cba5bbd93fb7b6079",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.BundleExchangeChain",
+      "path": "FairDivision/Finite/BundleExchangeChain.lean",
+      "sha256": "745dbe197579815a21279baf281f00c8a7beded76bb43e2bafa63e4eeab153ec",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.BundlePartitionAllocation",
+      "path": "FairDivision/Finite/BundlePartitionAllocation.lean",
+      "sha256": "9ca37b638e729ae36ae60ee9d52a94c8b85d4e1e403f776b41522a44fb8777b5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.BundlesToAllocation",
+      "path": "FairDivision/Finite/BundlesToAllocation.lean",
+      "sha256": "2d7f6ac8f766dd3755cb6c56821c357df3303c6beaafab3832ca9869245f367a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DisjointReserves",
+      "path": "FairDivision/Finite/DisjointReserves.lean",
+      "sha256": "0039181f91e03a835f52f8f9baafdc21d5eca3b7beff065161764cb659b10b6c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyFreeFullPosition",
+      "path": "FairDivision/Finite/DummyFreeFullPosition.lean",
+      "sha256": "c5b0db55f031cfa4e53a397c27bb17e558af4fad70377ab75dfe700dba0ad9dd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyFreePosition",
+      "path": "FairDivision/Finite/DummyFreePosition.lean",
+      "sha256": "18d8385716a99e700badb55a6f4ecfca46cd33d093713e630bee6043b50ea4d7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyRemovalArithmetic",
+      "path": "FairDivision/Finite/DummyRemovalArithmetic.lean",
+      "sha256": "c3199dc956f43b9c7f9a8d8cb19e4ae609e072e0ae6c50aeb7c0ba8d0cbc41b4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyRemovalBalance",
+      "path": "FairDivision/Finite/DummyRemovalBalance.lean",
+      "sha256": "0d9943ee8d2de6b32b01e31b7b429a72ab5dff30a5914edf2187d9baba6bfdf1",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyRemovalFinal",
+      "path": "FairDivision/Finite/DummyRemovalFinal.lean",
+      "sha256": "c8bb449262dcafbdf20765d2f8a21f877233c768226ac6d5f32f5a9e62f16545",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyRemovalPartition",
+      "path": "FairDivision/Finite/DummyRemovalPartition.lean",
+      "sha256": "9102b8896e2cdff1cd575b00bedba814ce5db95d82d59e860915ffede4cf8f5b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyRemovalReindex",
+      "path": "FairDivision/Finite/DummyRemovalReindex.lean",
+      "sha256": "fbb8513835f011b96c81d4b7c4e37581f59824859bdcb77f757f028cb1362dbd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.DummyRemovalThreshold",
+      "path": "FairDivision/Finite/DummyRemovalThreshold.lean",
+      "sha256": "5ea09689b8e7c4c98db1f2fc31ec827fb8ff8d7adba395dc92777dd9507a80dc",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.EquitableBundleChoice",
+      "path": "FairDivision/Finite/EquitableBundleChoice.lean",
+      "sha256": "9645bc6406d2124254516778fcc15e96dffca3ee81d534ea991d88d5fd0f976e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.EquitableCompletionBridge",
+      "path": "FairDivision/Finite/EquitableCompletionBridge.lean",
+      "sha256": "937eb7a87e90d5edf97f3dce68bfad70c824f4a4233ab50953b955a0ba58a03e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.EquitablePartialSelection",
+      "path": "FairDivision/Finite/EquitablePartialSelection.lean",
+      "sha256": "7e3fcd446080df57e7dbed109aa643ec0f96ee7594ba621180ebbcb58b0421a8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ExchangeBracket",
+      "path": "FairDivision/Finite/ExchangeBracket.lean",
+      "sha256": "ff37091bf79084de8bf618d1d975f5e2b6fd1c62a4a0d495cc034919b1211a0f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ExchangeThreshold",
+      "path": "FairDivision/Finite/ExchangeThreshold.lean",
+      "sha256": "7051b3dd2112aeac49e063049648e45f09a1b00d3836268507b36ed66c35054e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ExpectedValue",
+      "path": "FairDivision/Finite/ExpectedValue.lean",
+      "sha256": "b7a3ca35acf4012bcb3b2978a788c80bbe65da29a3d00169a7045644f857a28e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.FirstThresholdCrossing",
+      "path": "FairDivision/Finite/FirstThresholdCrossing.lean",
+      "sha256": "87c976800248580a3207a8dd2359777b1055d172293c46efd82b359e1e47a6c0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.Fractional",
+      "path": "FairDivision/Finite/Fractional.lean",
+      "sha256": "258fcfe5c54426f8c2a05cc687272d0ef60e716d5b886d959f75ca3dfc9bf354",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.OrderedPrefix",
+      "path": "FairDivision/Finite/OrderedPrefix.lean",
+      "sha256": "413e48e172cc9fdf6f0ff9cd83d41912e1445b3bed32264f9e2d348346248e5f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PartialCompletion",
+      "path": "FairDivision/Finite/PartialCompletion.lean",
+      "sha256": "659dcde513e98aaedff79235afe1f2503d4bf5a1c5e2b1c1142154a64335253a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PartialCompletionDonor",
+      "path": "FairDivision/Finite/PartialCompletionDonor.lean",
+      "sha256": "820206429a1786813e77e702998930587512b67d5bbf0c4326f3a80c9224514e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PartialCompletionFill",
+      "path": "FairDivision/Finite/PartialCompletionFill.lean",
+      "sha256": "bbe7fd61450d77a00fb6c82d2189756a437331e3b8bee1c2a4eb76181096658b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PartialCompletionReplace",
+      "path": "FairDivision/Finite/PartialCompletionReplace.lean",
+      "sha256": "ffd7c1541fdb41c7e5c3b258d368ff589a6b3e79c5c1a351502a644eb79c7729",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PartialCompletionState",
+      "path": "FairDivision/Finite/PartialCompletionState.lean",
+      "sha256": "a0ff7963966d9414f58f07d053d0403ffa20884330090233f6947204685023e7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PartialCompletionSwapFill",
+      "path": "FairDivision/Finite/PartialCompletionSwapFill.lean",
+      "sha256": "8878c69878d2d245f146556c3c4a9d8ad4c0c1dbd7f3638436cf3c1bb495aa18",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.PositiveBirkhoffMatching",
+      "path": "FairDivision/Finite/PositiveBirkhoffMatching.lean",
+      "sha256": "fda399cdc40be2ff8389fa5435614c4aabb9e3ca8d0148554714579bdd6fbcf6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ProjectedAllocation",
+      "path": "FairDivision/Finite/ProjectedAllocation.lean",
+      "sha256": "41088e56cc880042e6f714e9dc1f8a5c5409ffdb5fd12b8ef28c124703a9e1dd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ProjectedBalance",
+      "path": "FairDivision/Finite/ProjectedBalance.lean",
+      "sha256": "2e40fa386a9a684cc64463ba0615b8b99237b79c2d25e00f5cb3d9d5eb653cc5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.RectangularBirkhoff",
+      "path": "FairDivision/Finite/RectangularBirkhoff.lean",
+      "sha256": "fca5c44f8930d2ea761536089e360ba5746ccb9ddd26012f5925802c165ba831",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.Replacement",
+      "path": "FairDivision/Finite/Replacement.lean",
+      "sha256": "e457320dfc87a1badc37fcbbcc66092df7982e3264dc417dd6cbb95e10d7a029",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ShortBundleFill",
+      "path": "FairDivision/Finite/ShortBundleFill.lean",
+      "sha256": "e2eb560b993ce30f2fc7aaa3e8e130699c2dc9550e2425be2349d947c170e27f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ShortCount",
+      "path": "FairDivision/Finite/ShortCount.lean",
+      "sha256": "470c6876475a490972663a648d79cfc49cd4ca1a8f70721aeeef8f81e06bc38a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.ShortExtension",
+      "path": "FairDivision/Finite/ShortExtension.lean",
+      "sha256": "f2eabd91094478b2eafbbbd411ce1f3154f930d7e3075e5e640df53826a372bd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.SlotExpansion",
+      "path": "FairDivision/Finite/SlotExpansion.lean",
+      "sha256": "19d63a2558454983f4bf80fe56fcb255520344b431d6b444e5ae68a600c514e6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.SlotMatrix",
+      "path": "FairDivision/Finite/SlotMatrix.lean",
+      "sha256": "a384e46a99afc4bbeced7e13bfb54d65081725f8a2905631f95a1362bd520799",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.SlotStochastic",
+      "path": "FairDivision/Finite/SlotStochastic.lean",
+      "sha256": "42b3c6e14f9c390f965ce82362dcf3ff5887cbde70373347ceb56759bf80c848",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.SmallInstances",
+      "path": "FairDivision/Finite/SmallInstances.lean",
+      "sha256": "9de90b73a8d7de0fda1ffa343dc008dda3b15b4a8db4f02d832b982263d10280",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Finite.SupportedPermutations",
+      "path": "FairDivision/Finite/SupportedPermutations.lean",
+      "sha256": "031e70f578c04f763b6a2eaa83ec7ba3480a51c174a7973d6ed9397bb950d7c9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.LinearAlgebra.MatrixSpecializationRank",
+      "path": "FairDivision/LinearAlgebra/MatrixSpecializationRank.lean",
+      "sha256": "3765af63f1bc148dc494a3abf2bf7147c451432d028e042c459f02d7e146a4da",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.LinearAlgebra.RankMinorConverse",
+      "path": "FairDivision/LinearAlgebra/RankMinorConverse.lean",
+      "sha256": "e103d8c258be989ee6c1914a415362a742e0376a7c91ccb42ac7c180cfdbe3a5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.LinearAlgebra.RankMinorForward",
+      "path": "FairDivision/LinearAlgebra/RankMinorForward.lean",
+      "sha256": "2483e89e351b3c7884cddf0dd469e1b684e5588fc99eddebf717ba4a0a89bd29",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Probability.FiniteDisjointBlocks",
+      "path": "FairDivision/Probability/FiniteDisjointBlocks.lean",
+      "sha256": "ecc12928f2a8f4d825e0150dc716eff881c831a0a3f568ee80721cf8fd7d8424",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Probability.UnitUniformProduct",
+      "path": "FairDivision/Probability/UnitUniformProduct.lean",
+      "sha256": "e91ae6bfdec05689f7a17ff314f5e91e8f2c198b5d87a5b08924023613df54de",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Statements.Existence",
+      "path": "FairDivision/Statements/Existence.lean",
+      "sha256": "ea5cc81bc6a3498eaca9680e9b64045075212ca4c212deaa38f5696c4a3a5d1c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.BipyramidBarycentricClassifier",
+      "path": "FairDivision/Topology/AAK/BipyramidBarycentricClassifier.lean",
+      "sha256": "2eb91acc8b5ae41baa17fbe16ee9dcbaf717760d4685fc3566fa22c2faa67ea0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.BipyramidBaseFacePhase",
+      "path": "FairDivision/Topology/AAK/BipyramidBaseFacePhase.lean",
+      "sha256": "12b8dae703a8446d41040f782d90f4d1988447ac6b5bd1c2c516583b8ec1bec4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.BipyramidClassifierEquivariance",
+      "path": "FairDivision/Topology/AAK/BipyramidClassifierEquivariance.lean",
+      "sha256": "a32b12763b917fcf725147530c72b7e64857df4709a8533a98143fab9e5c0464",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.BipyramidCyclicFaces",
+      "path": "FairDivision/Topology/AAK/BipyramidCyclicFaces.lean",
+      "sha256": "29d75dc0d10146074d9146ee399b16e1a2ff7083febd508222084f37465c8bd0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.CyclicJoinSignReversalZero",
+      "path": "FairDivision/Topology/AAK/CyclicJoinSignReversalZero.lean",
+      "sha256": "3eca409cc3a5e4941942b1ec3c9b77058f62ecfbdf20869c953b7c2b2fed0daa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.RelativePrismObstruction",
+      "path": "FairDivision/Topology/AAK/RelativePrismObstruction.lean",
+      "sha256": "1c058a431c1b8f90467a8512e24bff9efad04306194d4c0d9ac4db9bb0de8535",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspendedJoinPoleHomotopy",
+      "path": "FairDivision/Topology/AAK/SuspendedJoinPoleHomotopy.lean",
+      "sha256": "a6429045609b518d0b867cefc8df08e69a06fcd9fe81cc1e781b23cc91209a5a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspendedJoinPrismSelection",
+      "path": "FairDivision/Topology/AAK/SuspendedJoinPrismSelection.lean",
+      "sha256": "2fdef61fed549794e31b1402583cb757101eaaee6a592fd67620d2307253fadd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspendedJoinVertexSelection",
+      "path": "FairDivision/Topology/AAK/SuspendedJoinVertexSelection.lean",
+      "sha256": "1e1dc4877d1b6a4857a49478f7f7d58d1eab8c733b2b6f73f38cd9cbe224eca5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspensionAlphaAction",
+      "path": "FairDivision/Topology/AAK/SuspensionAlphaAction.lean",
+      "sha256": "a32ee059f0648aac19cd9e555350ddf3716e6ecaa10d18b66602aae4772a49bd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspensionAlphaBoundary",
+      "path": "FairDivision/Topology/AAK/SuspensionAlphaBoundary.lean",
+      "sha256": "78223c1968801fab33d648204e7a480a10e50ce1330a128518005cc7976bec8a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspensionAlphaList",
+      "path": "FairDivision/Topology/AAK/SuspensionAlphaList.lean",
+      "sha256": "d6a7948f2b66b7e0de986a5e9763cf8c630eb21efd0a6e666c607916676a4508",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspensionRawChains",
+      "path": "FairDivision/Topology/AAK/SuspensionRawChains.lean",
+      "sha256": "a619c1fddad83e941a201e2deffbef83e4fcab322d79f66396c04c20c575e5da",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspensionRelativeChains",
+      "path": "FairDivision/Topology/AAK/SuspensionRelativeChains.lean",
+      "sha256": "94a4e5258f64c744878b4324fbebe0f291d62fa14c8c1b90553d76a54287a5e2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.SuspensionRelativeCyclic",
+      "path": "FairDivision/Topology/AAK/SuspensionRelativeCyclic.lean",
+      "sha256": "9016f7d0e7d395c17665f187a9c2008c9ab7b65ffca7f8fc4a834c5d84cadc54",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.ZeroFreeBipyramid",
+      "path": "FairDivision/Topology/AAK/ZeroFreeBipyramid.lean",
+      "sha256": "50cdda4e42ad2cce8347ea25df1c5806fe4e8240023fd0c53e4c749d1940ddf9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.ZeroFreePoleHomotopy",
+      "path": "FairDivision/Topology/AAK/ZeroFreePoleHomotopy.lean",
+      "sha256": "a02401e8e7d16d3c96f1397b2f4bfdce72e15b21d10f06edf8ef6420d2408c87",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.AAK.ZeroFreePrismSelection",
+      "path": "FairDivision/Topology/AAK/ZeroFreePrismSelection.lean",
+      "sha256": "043b8bb3f367d49365237ca8ac100baedb18dccfa2a6b0ebdde24e6de773acf7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.CenteredScores",
+      "path": "FairDivision/Topology/CenteredScores.lean",
+      "sha256": "19a8b604df927a702509aecdf8e74c9611cf2ac948bfb615f72c448d0c8c117a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Chain.OrderedPrism",
+      "path": "FairDivision/Topology/Chain/OrderedPrism.lean",
+      "sha256": "17997ee3700e38ed4cc40aa9b68dbca6244358ff21a8010b76819a635994e04a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Chain.OrderedPrismNaturality",
+      "path": "FairDivision/Topology/Chain/OrderedPrismNaturality.lean",
+      "sha256": "d55cb11f56e94d2820e24484b38909914b652936e77be3438f6d003bf0804159",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Chain.OrderedPrismPath",
+      "path": "FairDivision/Topology/Chain/OrderedPrismPath.lean",
+      "sha256": "c1606963e4ea0c7b2e28f9ea5c727d6e7f91d78fda3a3f2678ecea81de07f2d5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.CompatibleLottery",
+      "path": "FairDivision/Topology/CompatibleLottery.lean",
+      "sha256": "5a4981ce52117c83936a952ce4b575a3ce32242b9256c7ef7e30bf98011fa7c6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.ContinuousCompactMaximum",
+      "path": "FairDivision/Topology/ContinuousCompactMaximum.lean",
+      "sha256": "ad950c614acd78d465921f52d08da8d30c5f40899856771595b2ef59770f2d9b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteClosedCoverMaps",
+      "path": "FairDivision/Topology/FiniteClosedCoverMaps.lean",
+      "sha256": "e91fe4f831345cd8026dbfe1de4c7dcf5bd9d0800e25ce770cea9625b8e93f87",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteCoordinateMaxFaceExtension",
+      "path": "FairDivision/Topology/FiniteCoordinateMaxFaceExtension.lean",
+      "sha256": "5c39ebbc1b7c0f331976d7b66816bfc8172057084cb0bcc63517c9971aaa8411",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexCubeBody",
+      "path": "FairDivision/Topology/FiniteSimplexCubeBody.lean",
+      "sha256": "37e37a8926560e6746e6dcb22b0ac51e11cb95b8ec0f8ea3b75d717e6071c144",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexCubeBoundary",
+      "path": "FairDivision/Topology/FiniteSimplexCubeBoundary.lean",
+      "sha256": "c0ad7bb3159620db1f4d7244139a642a2de0d3556ada22483fdce54f421ef554",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexProduct",
+      "path": "FairDivision/Topology/FiniteSimplexProduct.lean",
+      "sha256": "ae311d7ea771d74e4d56f5817c609bf1836d101fec2fc90fd69daba6d5788b05",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexRestriction",
+      "path": "FairDivision/Topology/FiniteSimplexRestriction.lean",
+      "sha256": "85b1e15d033d0f3978281c865a9d70e966bd9168ab6a0f204a8a95005426b4c0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexSegment",
+      "path": "FairDivision/Topology/FiniteSimplexSegment.lean",
+      "sha256": "b99430eb4913343b31399d52bf32c441d483930311351eead0095a10ca6fc601",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexSkeleton",
+      "path": "FairDivision/Topology/FiniteSimplexSkeleton.lean",
+      "sha256": "a237a24c16e48a4a876357e4f3251eeb4c857907de29dadefc67ea88af482d60",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexSkeletonExtension",
+      "path": "FairDivision/Topology/FiniteSimplexSkeletonExtension.lean",
+      "sha256": "47114c6af28cd522be21c49f9e6ae341c825a3f6741117f4c6be6cfbdee4375e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexSupport",
+      "path": "FairDivision/Topology/FiniteSimplexSupport.lean",
+      "sha256": "f163128b7706900158b3b53a94a579607e9b0eb56dc45e800b35ebaf15729a64",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.FiniteSimplexSupportMap",
+      "path": "FairDivision/Topology/FiniteSimplexSupportMap.lean",
+      "sha256": "43d91cf191d4261687c28e92b01357266833dd28f09e9155088a75f00d124e3d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricAffineTransport",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricAffineTransport.lean",
+      "sha256": "642ed10397d747a77d68783d73c039989bcc632956d6e4297bc0eb48c49c434d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricChainDimension",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricChainDimension.lean",
+      "sha256": "0def2a10bc9e2de08afd96a873bfca977bda5ac7071cfbf72a0b457ddb61851e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricFiniteSourceMesh",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricFiniteSourceMesh.lean",
+      "sha256": "5e38431d5327b7f12d7141b6ef727ac9a533da62593d41af1fdeb778d3cb979c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricForwardInjective",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricForwardInjective.lean",
+      "sha256": "8989dc762ea5e77a1c7c4f34380f2c571d9ea48e1fb01487fb3e5448830b4706",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricGeometricMesh",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricGeometricMesh.lean",
+      "sha256": "0576db463a6f268e30d18bcb56604debf5c6cf22c236070d63497052954164bf",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricGeometricRealization",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricGeometricRealization.lean",
+      "sha256": "b2081f21fe8ce7c50a0a49f508ee4ed4624620023a3f81ad6cdd1ae746391f91",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricHomeomorph",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricHomeomorph.lean",
+      "sha256": "450a749a651261df4fe42105942910b93c22b4fbab393c79cb753193a0733680",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricInverseSimplex",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricInverseSimplex.lean",
+      "sha256": "d32865f6c0f183bd14f08a8a5bd3f88a5a563711a38a9f1d2338417d0500c7b9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricInverseWeight",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricInverseWeight.lean",
+      "sha256": "7f94026d710674e76bb4168b83abaae01c85320c0fb47373de09d32d5bfd2936",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricIteratedRealization",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricIteratedRealization.lean",
+      "sha256": "a56b3968a57a02d10053e0495ad23335580f3a03e6ce073d9362cf8ea7abe257",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricLayerBridge",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricLayerBridge.lean",
+      "sha256": "d603a0e9bcd56d7d356123610235f07c0070656d92817353214a4284026f53d0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricMeshFactor",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricMeshFactor.lean",
+      "sha256": "edc21c2b6c9ae38643658592adc17b3bb004e2c5241a5f0197518aa8b2fbaae0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricMeshIteration",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricMeshIteration.lean",
+      "sha256": "3a9d03ea7eaa5e5830d223d56fd31b0124580368d364ae3ee75fb338c5020fc7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricMeshStep",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricMeshStep.lean",
+      "sha256": "336cb0adffd1f7233b8a9bddcda6837e55939f21a5af6c7651a80065cc2c7bef",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricOpenCover",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricOpenCover.lean",
+      "sha256": "398562878e3b2b35ac644d22fa635d863b0e30777e2355218c47948d7e107efa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricOpenSubordination",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricOpenSubordination.lean",
+      "sha256": "193cbfcbeb200eacbcfb6b87f8aa3b84b081dd0f6112aca675aa03afdd781872",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricRealizationMap",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricRealizationMap.lean",
+      "sha256": "9e3299daf779672f54ed78fad0056982100d860c25e0aee24c42aa1e0e7e9983",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricStarRetraction",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricStarRetraction.lean",
+      "sha256": "bfee2a01b09dd865b9e6ac267ea9ed0ba0ab6733efe5438344ea8aa58740a471",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricStrip",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricStrip.lean",
+      "sha256": "3ecd5be12bd977c43cb9dfcd1192d123672283cf786ad7becf12843e5bb55f8f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.BarycentricSubdivision",
+      "path": "FairDivision/Topology/NerveConnectivity/BarycentricSubdivision.lean",
+      "sha256": "ad23fcb06449ddf02bfcc1efd3791e061d77122b236370c05ee4eaf8bf506179",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.Basic",
+      "path": "FairDivision/Topology/NerveConnectivity/Basic.lean",
+      "sha256": "10331dc5377d978ae18105b212939d1f5e885a4d04d936ce670fa3bb4f9970bf",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.ClosedCoverPasting",
+      "path": "FairDivision/Topology/NerveConnectivity/ClosedCoverPasting.lean",
+      "sha256": "db6a618580551d017f22ec8a5b3aaac10b464774711c24542414addcc14e0cce",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.ClosedRealization",
+      "path": "FairDivision/Topology/NerveConnectivity/ClosedRealization.lean",
+      "sha256": "86df8b2b982a14ce3b61a52b67e7df1f30bffae2b574cc641ac5a27e15f15580",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.Combinatorics",
+      "path": "FairDivision/Topology/NerveConnectivity/Combinatorics.lean",
+      "sha256": "5896d9226488df00ff6b8d7a9b07dba1a60bb9b35791514c56660f5d2180bf0e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.ConeExtension",
+      "path": "FairDivision/Topology/NerveConnectivity/ConeExtension.lean",
+      "sha256": "bacddd57b452a55d5ba747a0e70e2e83020970b123eff576e465366758b7204a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteCellAttachment",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteCellAttachment.lean",
+      "sha256": "e911b995256f8d331426cf1040730280f91caa7eb28ff93b1f50d8ae29494133",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteCellExtension",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteCellExtension.lean",
+      "sha256": "085f5cdbf6a0500820e18102de44233bc5c95e976f9b2feaf1a4d0cb4b2d3472",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteCellOrdering",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteCellOrdering.lean",
+      "sha256": "fed987dc211f29dc0e33e68d2d4476ad0df869866d390ce65f3fabf8f041cae4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteClosedFamilyPasting",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteClosedFamilyPasting.lean",
+      "sha256": "dac952fc25871c74d19e9ccfcb732f9e7ecca7b9c5207c14140e9f965c6657e7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeBaseRealization",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeBaseRealization.lean",
+      "sha256": "337e098056f217f5b0257a917d28cc61678ffa68585dfaa608e30db6bbbe58af",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeBinaryGluing",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeBinaryGluing.lean",
+      "sha256": "b97bf894c3b4ed63cc37fa27b327747946b3cb8cb9597a69dc8c53abe08024e0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeBinaryPaste",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeBinaryPaste.lean",
+      "sha256": "d3241d7c5586f0f836d9e5042cd7833976ec844243dcc0caf45cebb7d4a3854e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeComplex",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeComplex.lean",
+      "sha256": "8cd9ef14fc946fa732793bb0662074e22ab6242cf9b6d65ad0bafca06cd5da1e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeContraction",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeContraction.lean",
+      "sha256": "dec1d109f99d165790c93610545ef084c4cebee18e8566f995e0bd558caf2dfa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeExtension",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeExtension.lean",
+      "sha256": "45e46edca4a353dc8b3d4fba3cbb734acc29c2ba57a0a0132afe239c0a41aec3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeIntersection",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeIntersection.lean",
+      "sha256": "5da3bdaf6b238969fe6580a23dd51c32dd8d7f96654f21fe2270eef8d85fd740",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeNaturality",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeNaturality.lean",
+      "sha256": "a2e76e9b4d5b6457508e4f3364b629f41de60870aa9044e1e9b5dbfe02a3cc05",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeRelativeExtension",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeRelativeExtension.lean",
+      "sha256": "3b8680e22b3f1e68d67bb5c3fc64defb44df7920bfaca605da553bb0088a9555",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteConeRelativeMapExtension",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteConeRelativeMapExtension.lean",
+      "sha256": "329fdfc3deedd6cb60f8601346435f8a23db693959249c2e5c08b4912d55fd5e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteCoverTopOverlap",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteCoverTopOverlap.lean",
+      "sha256": "6598a34bf6a250b2d5509718a9cb5e8c2b0bf79c41cfb8949473cc79ed857e15",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFaceBoundary",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFaceBoundary.lean",
+      "sha256": "825af4fefce22b92ad7f4cf975cdd01b78da686b0cabdb5053d7b88b2dd034bd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFaceFilling",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFaceFilling.lean",
+      "sha256": "d2ade3a7b0dcd544cbdea5b0afa0c020139ab1440da6d8ab1385c0de2193cd15",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFaceFiniteBoundary",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFaceFiniteBoundary.lean",
+      "sha256": "d0b8d751bfd9f013b047fa36df647ab0f848648f909e5429e76b2c6e102c1369",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFaceGeometry",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFaceGeometry.lean",
+      "sha256": "78b91ae586c03122a95831161fa9560f3f2f8ee45e1c29d446b904e309147b83",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFacePrismBoundaryPaste",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFacePrismBoundaryPaste.lean",
+      "sha256": "3d6190d588c4b00ddb8c29401ca0f4db68833dc563d4b7874ca5f6faecf23542",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFacePrismFilling",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFacePrismFilling.lean",
+      "sha256": "dc06e836f9f50f214ef3fce22fc5c3065473ea08abf152c925439cfd2a753eb6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteFaceRelativeHomotopyExtension",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteFaceRelativeHomotopyExtension.lean",
+      "sha256": "eeeaf204937e3588b3c6e3e9314ac1ad4ca61e7e907200304fff1e2f52992bb9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteLevelTelescoping",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteLevelTelescoping.lean",
+      "sha256": "452b0cdfdaf9201c2777ba7089a417947e178667618d8bce55390c36d1c73f27",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteLocallyPathConnected",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteLocallyPathConnected.lean",
+      "sha256": "5bf5098259857c6d8b52f048e966aef2a8a2eabc499021414a1ee09de5912790",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteOpenCoverGluing",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteOpenCoverGluing.lean",
+      "sha256": "3cf603e2d73af9229088f146d92964a19214c07dfd56ede1b9490debf554e3c1",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteOpenCoverMesh",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteOpenCoverMesh.lean",
+      "sha256": "7868bc1dcc0bdf7653d38b019d49bc92c593fd6da8419bacdcbce582018829eb",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FinitePrismPasting",
+      "path": "FairDivision/Topology/NerveConnectivity/FinitePrismPasting.lean",
+      "sha256": "6a557fe226dc4aec6a0543f84b685dd5ac6a5e638f56d60554a12301ce956ddf",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteSimplexAffinePoint",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteSimplexAffinePoint.lean",
+      "sha256": "b21acb239001edb12cd156155c47198e3de0c0d4fe40e74c25568201d9c7e55c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteSimplexGeometricRealization",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteSimplexGeometricRealization.lean",
+      "sha256": "abbfc529857306359f2349c876620d01722c41d2d03418bf2f71bde1464b2d7f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteSimplexOpenSubordination",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteSimplexOpenSubordination.lean",
+      "sha256": "403b0f90a45c1c966b91a9db1ad985d8d8d7cea9853c55f5369ec2b6a9d1fb48",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteSimplexRelativeOpenSubordination",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteSimplexRelativeOpenSubordination.lean",
+      "sha256": "4d7aa5855536d6ffe52afcd5a9f95d944b33fc64f99f1612c3968b80b7db3346",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteSphereSource",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteSphereSource.lean",
+      "sha256": "765778995a3ffb0305fa3c39072998024e894be6c7555f17f6fc39e3d5635b83",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.FiniteVertexAttachment",
+      "path": "FairDivision/Topology/NerveConnectivity/FiniteVertexAttachment.lean",
+      "sha256": "249ad093feef5d8e0f242e2689585da9b902a6b1d5ba4f08081d4c2705bc1c0e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.GluingReduction",
+      "path": "FairDivision/Topology/NerveConnectivity/GluingReduction.lean",
+      "sha256": "637e6d819b06d1aff4938c237461fdae13cd7f786d14ba58697bb6333f985916",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.NullHomotopy",
+      "path": "FairDivision/Topology/NerveConnectivity/NullHomotopy.lean",
+      "sha256": "0fef4bdceecc9bd70cb28a79028db5647155af57b48210c49360ff180d65d28e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.NullHomotopyTransport",
+      "path": "FairDivision/Topology/NerveConnectivity/NullHomotopyTransport.lean",
+      "sha256": "832924da8b7a6c1dbe64d6d6e2d6ea9f85775b77358710becd325d85be183317",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.NullHomotopyZero",
+      "path": "FairDivision/Topology/NerveConnectivity/NullHomotopyZero.lean",
+      "sha256": "126d3f570d80d7c6c5e94bf3a331446b262549606eb8bb0a29ccb43f1db230e1",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.OperationalFiniteCover",
+      "path": "FairDivision/Topology/NerveConnectivity/OperationalFiniteCover.lean",
+      "sha256": "be2fb5f5d5b5fda7dd1b0ede2d7789af18de0a34a0f5f0426bf6a9296f8cea35",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.OperationalOpenCoverGluing",
+      "path": "FairDivision/Topology/NerveConnectivity/OperationalOpenCoverGluing.lean",
+      "sha256": "19066029c40caaf813f1b30de7fde1ceaeea21bd71761a256f705f0a1579ce23",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.OperationalReduction",
+      "path": "FairDivision/Topology/NerveConnectivity/OperationalReduction.lean",
+      "sha256": "4394b20a7f95460ced25c5a6c474da1d88e377431859421eab86ec958f352b67",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.PrismBoundary",
+      "path": "FairDivision/Topology/NerveConnectivity/PrismBoundary.lean",
+      "sha256": "83dd7796f58fbdbb56514aafc59f860d839b6bdd6e5437d8dc023fc3a593814d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.PrismBoundaryPasting",
+      "path": "FairDivision/Topology/NerveConnectivity/PrismBoundaryPasting.lean",
+      "sha256": "081b5777da223d1f77772a54aaeae6b6253e7be1340e543520cfc07991e2a804",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.PrismCellFilling",
+      "path": "FairDivision/Topology/NerveConnectivity/PrismCellFilling.lean",
+      "sha256": "60042f8682601401241a65705c5e175e41d8453f60026ff99b859cb687fab266",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.PrismConvexBody",
+      "path": "FairDivision/Topology/NerveConnectivity/PrismConvexBody.lean",
+      "sha256": "5b7cc104a7e2f492f8744225a0a1b00c424038e232904a5e31678e54e2183cf2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.PrismCubeCoordinates",
+      "path": "FairDivision/Topology/NerveConnectivity/PrismCubeCoordinates.lean",
+      "sha256": "e7d2e91f872159552bf8d5357c3811ccf018983e94461f59801e7355ecf6f2a3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.RealizationEquiv",
+      "path": "FairDivision/Topology/NerveConnectivity/RealizationEquiv.lean",
+      "sha256": "19c19c5f4a0f9205517699166ecfb24d04ca0a4bf1e27084888afae676ccba48",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.SimplicialCover",
+      "path": "FairDivision/Topology/NerveConnectivity/SimplicialCover.lean",
+      "sha256": "5462ff846b99f38ecf0e1740a138029dd9d0197368d1a668fa3273ee4125a18d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.SimplicialCoverPasteRestrictions",
+      "path": "FairDivision/Topology/NerveConnectivity/SimplicialCoverPasteRestrictions.lean",
+      "sha256": "0311e048cb72f06c2f1878299af94b4b155af058cb6f7c4b1a91dcb4ab43f93a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.SubordinateSourceCover",
+      "path": "FairDivision/Topology/NerveConnectivity/SubordinateSourceCover.lean",
+      "sha256": "5987dff9a421e9489e380bc0b83df09640d0c55433315bdb893a2bb61f72243a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.NerveConnectivity.SubordinateSourceMembership",
+      "path": "FairDivision/Topology/NerveConnectivity/SubordinateSourceMembership.lean",
+      "sha256": "272331d9aa25c601e034c61591a720eadc72b987a4f8df1d20c68290cffa82b8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Recording.CompatibleLotteryProduct",
+      "path": "FairDivision/Topology/Recording/CompatibleLotteryProduct.lean",
+      "sha256": "5ad9ff48bdc8d2f37ab36a7e76e17e283fb22779480fa6683a00e424f432ef1e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Recording.ProjectedZeros",
+      "path": "FairDivision/Topology/Recording/ProjectedZeros.lean",
+      "sha256": "e07838f9f7908af824b2342d5d6c0fca97d855ab5e2b0ae9619128bcef426c6c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Recording.SignedDistance",
+      "path": "FairDivision/Topology/Recording/SignedDistance.lean",
+      "sha256": "b5bc16a41cf8c84b40b4f84178c757d30e424f90c74315c3f7c9163b70c1b3df",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Recording.SupportedItemRelabel",
+      "path": "FairDivision/Topology/Recording/SupportedItemRelabel.lean",
+      "sha256": "ce3209e1c97053d9c7aeeae3145b55c9c7281fbdfa41f58b66db70eb3b369ef4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.RegularTranslation",
+      "path": "FairDivision/Topology/RegularTranslation.lean",
+      "sha256": "bd1cf4a958f4bd66746258932f0a93a45bd963da24c0a419e4b36747cfd25f8c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexAffineHyperplane",
+      "path": "FairDivision/Topology/SimplexAffineHyperplane.lean",
+      "sha256": "63b8f4c1f03244b6543326f4b0dce2d5d6d5e972ac34d0a7d662e4818b6dfa59",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexAffineHyperplaneBall",
+      "path": "FairDivision/Topology/SimplexAffineHyperplaneBall.lean",
+      "sha256": "5c2dbfcf0caab2342c2f05344d0d6a446d617f3364f8e8597f4919b84430adad",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexAffineHyperplaneBounded",
+      "path": "FairDivision/Topology/SimplexAffineHyperplaneBounded.lean",
+      "sha256": "154e29b09a8589693b162cc623335040361e8c04d33aa3ab46e5157823599721",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexAffineHyperplaneRealization",
+      "path": "FairDivision/Topology/SimplexAffineHyperplaneRealization.lean",
+      "sha256": "8a2ef1d21f3c657a5b32e554d39069de08304c3218205c9e873b0a3709f9d73f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexCoordinatewiseExtension",
+      "path": "FairDivision/Topology/SimplexCoordinatewiseExtension.lean",
+      "sha256": "f1b6464784ae6fce073d7844db9f4a7b296b9f85c367604f1920e862fb73ccc7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexEuclideanBall",
+      "path": "FairDivision/Topology/SimplexEuclideanBall.lean",
+      "sha256": "2f485cab54e9cf5f5e28f52af63e44b8584ab95086259a363e54d71fc944888c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SimplexOneSkeletonMap",
+      "path": "FairDivision/Topology/SimplexOneSkeletonMap.lean",
+      "sha256": "89130b611bd0b22f80cdbde8b188f4480f3152686a23e96e3ffd2a28ef4624bb",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapBasic",
+      "path": "FairDivision/Topology/SphericalCapBasic.lean",
+      "sha256": "506db465bdfa389883bf6fec22c407a1c182647f6511f00f75d7682ad0de05aa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapBlendPath",
+      "path": "FairDivision/Topology/SphericalCapBlendPath.lean",
+      "sha256": "f59cec464fa54a06b345032a00af2740dccca7b5bf32ae453f218f116397c0da",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapBoundaryGeometry",
+      "path": "FairDivision/Topology/SphericalCapBoundaryGeometry.lean",
+      "sha256": "536e582bac54b91109701327113a8c119e9172caf8de664da9075c11e629c9a7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapInterior",
+      "path": "FairDivision/Topology/SphericalCapInterior.lean",
+      "sha256": "08c403ab6df35badb40754404b6006a9f9384170847ec6e9f6b04248cc04d726",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapLower",
+      "path": "FairDivision/Topology/SphericalCapLower.lean",
+      "sha256": "a016915187f512559ad2620d2cf7ea2813f7ab79d285dc3dd5cd8141d1cabae8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapMaximumExtension",
+      "path": "FairDivision/Topology/SphericalCapMaximumExtension.lean",
+      "sha256": "ff92637a1c54df2b4f37816dcf0d7c65f2c0fa89ac9932aa559facc6000d8da6",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapRadial",
+      "path": "FairDivision/Topology/SphericalCapRadial.lean",
+      "sha256": "85d012bdfce50852acde4c22cd1f411842dcc00f248974c3348bac455744d740",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapScalar",
+      "path": "FairDivision/Topology/SphericalCapScalar.lean",
+      "sha256": "4600d0f74a3fdd94f96075eae136826c9317e344d8d3cbaf12ed9b1c31513ed1",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapStrict",
+      "path": "FairDivision/Topology/SphericalCapStrict.lean",
+      "sha256": "c6f9379cb6ec37df99d906c0ca95ecc8b5bb55d080f50046c3f60cd8419abe42",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.SphericalCapUpper",
+      "path": "FairDivision/Topology/SphericalCapUpper.lean",
+      "sha256": "f703de7fe137a122d324c6d27ef3f363695e3510a109853f9cb9b9581fa40b32",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UniformPathConcatenation",
+      "path": "FairDivision/Topology/UniformPathConcatenation.lean",
+      "sha256": "e3e3c659cb99a2ff655c24a30d2e4e3fb620ad45361908d34ac6e8293e221caa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnitSpherePerfect",
+      "path": "FairDivision/Topology/UnitSpherePerfect.lean",
+      "sha256": "7ca058191b98f6ea8e2a6427c11bde745b4e4fbb269be2ecfc3af5d0be22744e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledActionHomeomorph",
+      "path": "FairDivision/Topology/UnlabeledActionHomeomorph.lean",
+      "sha256": "491b965e61a9f2a077af043fb463a14b88263ffefa9c3d78cf95d5931f150190",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledActionLaws",
+      "path": "FairDivision/Topology/UnlabeledActionLaws.lean",
+      "sha256": "21e5d50dcab1e28546b111d3b5b4c572ce60aa51ed6e50e71117f127095dcaca",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledContinuousAction",
+      "path": "FairDivision/Topology/UnlabeledContinuousAction.lean",
+      "sha256": "73cf800c2bb86fccf48f79c848a0368aa007200f04b0518ce0eb30ded6eebe30",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledDummyComplex",
+      "path": "FairDivision/Topology/UnlabeledDummyComplex.lean",
+      "sha256": "cd66a1d0a458c914d1f645f6e91385e95bad833481d69d14920649e4257a2643",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledDummyFaceCriterion",
+      "path": "FairDivision/Topology/UnlabeledDummyFaceCriterion.lean",
+      "sha256": "9b6e6d5c3fadffc454e4ffdbcba710b624e868abf14a3f08a63b556806cca99b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledDummyFaces",
+      "path": "FairDivision/Topology/UnlabeledDummyFaces.lean",
+      "sha256": "9dce0962f4994badd240c6dbc731cf273b5d18d8aff715d99898229769f65d61",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledDummyProfiles",
+      "path": "FairDivision/Topology/UnlabeledDummyProfiles.lean",
+      "sha256": "4c918288b4923c68d3908016247b8ba3777cf9bb7631068dbc824f8332076272",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledLottery",
+      "path": "FairDivision/Topology/UnlabeledLottery.lean",
+      "sha256": "b87d9feae5d859666b5adbde2f9e61d28007a341bb804123909b4747324ccc6d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledLotteryLift",
+      "path": "FairDivision/Topology/UnlabeledLotteryLift.lean",
+      "sha256": "7e4ff8d8bba2b9e5d9f6daa4896f81f5c1f22e5e2369b1a69367945aff4cf74f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledMarginal",
+      "path": "FairDivision/Topology/UnlabeledMarginal.lean",
+      "sha256": "dd72e303bfcbf6778f0c628dadce427a94c7b86c5a5fe1177c7b77cdbd8e5459",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledMarginalFin",
+      "path": "FairDivision/Topology/UnlabeledMarginalFin.lean",
+      "sha256": "368b9db2e83ea91091aaa3a67d040918ca264fc70b57b3e8b3f15c2ae8bd6e2c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledPositionAction",
+      "path": "FairDivision/Topology/UnlabeledPositionAction.lean",
+      "sha256": "05f2eb347f1853a27069845b27412946ce5f40dca7205ce366240202bcdffb96",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledPositionEquiv",
+      "path": "FairDivision/Topology/UnlabeledPositionEquiv.lean",
+      "sha256": "9d68beaa3d33708410783f159e09eaaacc8407fe05b466d2c2ab1c386ab6f5bb",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledPositionFaces",
+      "path": "FairDivision/Topology/UnlabeledPositionFaces.lean",
+      "sha256": "12b8c43aa16bc52e9e75164b182e6c3cb73d3e35edecb81848e8131dc79d2754",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.UnlabeledReducedMarginal",
+      "path": "FairDivision/Topology/UnlabeledReducedMarginal.lean",
+      "sha256": "0a988cf8805e7b81f5bd729b9a50f986bf3d65acd8cdf25e5650d0262b5381a4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyBase",
+      "path": "FairDivision/Topology/VariableDummyBase.lean",
+      "sha256": "a597ac9dc9d881b61293015aee2bbbbfe0b09d9774249113c7d103bf04232af3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyComplex",
+      "path": "FairDivision/Topology/VariableDummyComplex.lean",
+      "sha256": "3b31992e6e8dbb11bd163a759942e4f687adfdc94aa406923e23194d3a633394",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyConnectivityInduction",
+      "path": "FairDivision/Topology/VariableDummyConnectivityInduction.lean",
+      "sha256": "eb917d13f0269d7731113936d4f77f77fd01b6eb9fb7f24540c15f9f54f09029",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyConnectivityTransfer",
+      "path": "FairDivision/Topology/VariableDummyConnectivityTransfer.lean",
+      "sha256": "adf16d771f9f2422edfa49ddc2685feb9231322782671c0eaeb7290361bb9fee",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyConnectivityZero",
+      "path": "FairDivision/Topology/VariableDummyConnectivityZero.lean",
+      "sha256": "44d644060e6867de07af18b655bd05755f7f350d689a1742d4bcd32192487a38",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyContiguity",
+      "path": "FairDivision/Topology/VariableDummyContiguity.lean",
+      "sha256": "936bb0b9576e40c28c3f4b48c72565f03be48455cceecd96d0f73a47dc0443b9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyCover",
+      "path": "FairDivision/Topology/VariableDummyCover.lean",
+      "sha256": "3c089cdc0af0c250925c5cddb4ded27b055a1288fdb69e8dd643c5b67e0ebc80",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyCoverIntersections",
+      "path": "FairDivision/Topology/VariableDummyCoverIntersections.lean",
+      "sha256": "2e9de1ad09096184f7772414a1890e377024632cc21e358d6f3052b73ac92964",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyFaceCriterion",
+      "path": "FairDivision/Topology/VariableDummyFaceCriterion.lean",
+      "sha256": "ce1db72f8d38f9f7d2201b9ade524c2fbdb3c6081773f632b749acf8445445ce",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyFaces",
+      "path": "FairDivision/Topology/VariableDummyFaces.lean",
+      "sha256": "c1599a08c56557e4c75937569983c307a4f4269326d0f7c2c3e4c0ce53a148e3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyForceHomeomorph",
+      "path": "FairDivision/Topology/VariableDummyForceHomeomorph.lean",
+      "sha256": "eb8f0351448f42cdd5d343c6139b6fc9dd6d571ef6f35a880cfd4934951e94c8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyForceReduction",
+      "path": "FairDivision/Topology/VariableDummyForceReduction.lean",
+      "sha256": "c7868ca12cae8c98784257f9e5901b51d66e55b6f2a32dd11486990545f6e18b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyForcedFace",
+      "path": "FairDivision/Topology/VariableDummyForcedFace.lean",
+      "sha256": "5c7a6ff5957f3af54374c1e002678028f0aa5b9bab51eb5a7387cf2235b65710",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyForcedSubcomplex",
+      "path": "FairDivision/Topology/VariableDummyForcedSubcomplex.lean",
+      "sha256": "4040a5875328df7cd6107f85923d9c6a3cd592df6fc9fd6a0f00570732a9f55a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyForcedVertex",
+      "path": "FairDivision/Topology/VariableDummyForcedVertex.lean",
+      "sha256": "5e715a073e160331047ba12a36d4aa76a16885a8fc892e28133641da30c583de",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyForcingMap",
+      "path": "FairDivision/Topology/VariableDummyForcingMap.lean",
+      "sha256": "49c7b11c28b071d0f4601479aaecf0a520368999fd2b5f0326d373b28b5683bc",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyInductionArithmetic",
+      "path": "FairDivision/Topology/VariableDummyInductionArithmetic.lean",
+      "sha256": "4e914424fcd38c5ab7bf15f95910ee13e893082d760b20cec96342ce3b3a71ef",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyInductionControl",
+      "path": "FairDivision/Topology/VariableDummyInductionControl.lean",
+      "sha256": "bb46edc76ce1029a531ddc282ae3ed3381ee33d011bd96ca8bedaca65500372f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyNonemptyInduction",
+      "path": "FairDivision/Topology/VariableDummyNonemptyInduction.lean",
+      "sha256": "afbc364ac0983f2ed4d82eb366994404606c8835b496ddd2bd5126676323596e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyProfileInsertion",
+      "path": "FairDivision/Topology/VariableDummyProfileInsertion.lean",
+      "sha256": "0bf0d8168b78082d9787bd015c44ac44be54adb32d8117bdbd4dd327ffc05f44",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyProfileShrinking",
+      "path": "FairDivision/Topology/VariableDummyProfileShrinking.lean",
+      "sha256": "802bf69c4785bcfb4163353443c22afce854ee62e13cc7aabfba2e1fe5af6786",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyProfileTransport",
+      "path": "FairDivision/Topology/VariableDummyProfileTransport.lean",
+      "sha256": "19063baaa82b44fd9b8cbd1d2c1113037cee186cb7e2d99e37bea8ab74184fb2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyProfiles",
+      "path": "FairDivision/Topology/VariableDummyProfiles.lean",
+      "sha256": "badb35759a3d5a01f77da8dfc2f8739448f6c514ba86eccbdadcf754818c8953",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyRealization",
+      "path": "FairDivision/Topology/VariableDummyRealization.lean",
+      "sha256": "c04bdb8079a8f02c2a568b03454d0cc58fdd40c9b9e60b41b055462d6b99f376",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyRetractions",
+      "path": "FairDivision/Topology/VariableDummyRetractions.lean",
+      "sha256": "1ee2bff05dc1f566b2967fb490498506cf7d4d3ee1f464494c6d41411046cda7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySaturatedSubcomplex",
+      "path": "FairDivision/Topology/VariableDummySaturatedSubcomplex.lean",
+      "sha256": "e40ddd2393b6650449cf5dd6ce9f0649bde10d91a4836644275db23678290015",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySaturation",
+      "path": "FairDivision/Topology/VariableDummySaturation.lean",
+      "sha256": "35bd7c793146e064af7ceb3b72ef13b01c3585ff408a2159ef3fb44b2365fdf7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySaturationHomeomorph",
+      "path": "FairDivision/Topology/VariableDummySaturationHomeomorph.lean",
+      "sha256": "24b5ea3c39c3a9227f5f3d6468061655342b82b03473541b75da4e5d24e4d553",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySaturationReduction",
+      "path": "FairDivision/Topology/VariableDummySaturationReduction.lean",
+      "sha256": "fc46d94da5a02cd796f5e9036d7072d3c99f0bd94ec81b92b370b0ca2789d07b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySimplicialHomotopy",
+      "path": "FairDivision/Topology/VariableDummySimplicialHomotopy.lean",
+      "sha256": "0900c6a192d369009940f715617ba5f0c3d7b832962fa62b4dc4d003eab4c84b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySimplicialRetraction",
+      "path": "FairDivision/Topology/VariableDummySimplicialRetraction.lean",
+      "sha256": "99469ed11bd345f6c870db9204f0a0b23efbe6f7e3d1e6ab63f893a883bf34c1",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummySlack",
+      "path": "FairDivision/Topology/VariableDummySlack.lean",
+      "sha256": "3a714bbf2ccaa1ca1faf35d2414678c9cf2d105636fdae52045c918401378fc9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStock",
+      "path": "FairDivision/Topology/VariableDummyStock.lean",
+      "sha256": "84de173aa7a9a382e3252caa68c81b8521e0f98b6f241f5b752c43fd58fc0601",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStockBase",
+      "path": "FairDivision/Topology/VariableDummyStockBase.lean",
+      "sha256": "2edc7889e1999d5f06a5ad798cdadc1c97a67bebf81a1502ac8d65cc98218f13",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStockCover",
+      "path": "FairDivision/Topology/VariableDummyStockCover.lean",
+      "sha256": "5d20951c30047a2a162c3f859a8ad3f9704a34c9adacfc9b053887448469f81a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStockForcing",
+      "path": "FairDivision/Topology/VariableDummyStockForcing.lean",
+      "sha256": "8517245bafdf0a798af3c49bbdea6d1b71228072dc50d4c3818b89dac0fdaab3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStockRealization",
+      "path": "FairDivision/Topology/VariableDummyStockRealization.lean",
+      "sha256": "3844d969eeaae8fee270dff7636cb291907a0b9d9051e23f6948850b61c1dd67",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStockSaturation",
+      "path": "FairDivision/Topology/VariableDummyStockSaturation.lean",
+      "sha256": "f828dab0bc320ef1d88d6fc87fbf79f29e00d0e59628bda26aaadf3501cd01a0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyStockWitness",
+      "path": "FairDivision/Topology/VariableDummyStockWitness.lean",
+      "sha256": "3bac54e52f520ab0c0f2c02388a0ef7ed79518aa4e60672cfdb6cab935d81223",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyUniformConnectivity",
+      "path": "FairDivision/Topology/VariableDummyUniformConnectivity.lean",
+      "sha256": "f75891223120ef0af220fa3c3e3994e4e3cd2552aec875147ebcc06ee8226e34",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyUniformConnectivityFinal",
+      "path": "FairDivision/Topology/VariableDummyUniformConnectivityFinal.lean",
+      "sha256": "fdff303f6acc1924b8a88a7d4caac30e646595749456ec77db7b460d04d3a0f3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyUniformConnectivityZero",
+      "path": "FairDivision/Topology/VariableDummyUniformConnectivityZero.lean",
+      "sha256": "de78b344c5b116656868022251fa7ea1bcb2216a453ebfe5d666cead4424d2be",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyUniformSlack",
+      "path": "FairDivision/Topology/VariableDummyUniformSlack.lean",
+      "sha256": "97021041a1fcf136266fbcea22b2785c19405afe89991987211c717c6a85b7a5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableDummyVertexBuild",
+      "path": "FairDivision/Topology/VariableDummyVertexBuild.lean",
+      "sha256": "7ecacea36525c5c625e4a3c7c7dceff0658149312ac7548e29b9130538871354",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.VariableUniformBridge",
+      "path": "FairDivision/Topology/VariableUniformBridge.lean",
+      "sha256": "8f6d205baa057e5b24ba5800b836daf67c7a3d7fd5ffc59a4360cb7692c9e26f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.AssociatedOrbitSection",
+      "path": "FairDivision/Topology/Volovikov/AssociatedOrbitSection.lean",
+      "sha256": "b84d7b6e7240481955e1376e1b77574d05d25358c434ed33712e6e0962a3412f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.BoundaryFilling",
+      "path": "FairDivision/Topology/Volovikov/BoundaryFilling.lean",
+      "sha256": "393b802f538430ee6a192106565569b4bc7145219d259864868a7877a4737ecb",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.CenteredCharacterDecomposition",
+      "path": "FairDivision/Topology/Volovikov/CenteredCharacterDecomposition.lean",
+      "sha256": "7d7dacd1b75fbdf1e5893e06b05ceccd7a74c56b65469e7b93146c425dbb220c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ComplexFiniteJoinReduction",
+      "path": "FairDivision/Topology/Volovikov/ComplexFiniteJoinReduction.lean",
+      "sha256": "035bd0bf39271337c999857765bac700aa73199b097100ae3daa04744a063c57",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ContinuousAction",
+      "path": "FairDivision/Topology/Volovikov/ContinuousAction.lean",
+      "sha256": "8ac08edbea8924d8af7f41cead62a02df5e82eb91064ca9c9b5bae948cfa461f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.CyclicLabelBlockExactness",
+      "path": "FairDivision/Topology/Volovikov/CyclicLabelBlockExactness.lean",
+      "sha256": "3bb2c25b2c6f588cc0317c296a60abac9bdd842ce0c22253a9f4c97f3d820a95",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.CyclicRegularCharacterCoordinates",
+      "path": "FairDivision/Topology/Volovikov/CyclicRegularCharacterCoordinates.lean",
+      "sha256": "7434f933b8264c9a7b58f78508e3d77c55618a2108ea5025f962e5993cdfa5d5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ElementaryAbelianCharacterBasis",
+      "path": "FairDivision/Topology/Volovikov/ElementaryAbelianCharacterBasis.lean",
+      "sha256": "d6681f9989c274a763c2cdbea352277b1746cdc7e9b22fc564a849abdf2734ff",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ElementaryAbelianCharacterCount",
+      "path": "FairDivision/Topology/Volovikov/ElementaryAbelianCharacterCount.lean",
+      "sha256": "4c618c9fcb56cffdcce03a18018f70c616c3c41b4832211da5fe2b2526897f46",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ElementaryAbelianCharacters",
+      "path": "FairDivision/Topology/Volovikov/ElementaryAbelianCharacters.lean",
+      "sha256": "8df2259de30a9b808adb501bf3896201bd69f94919ec6f2b2e108d6e09705f1e",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.Equivariance",
+      "path": "FairDivision/Topology/Volovikov/Equivariance.lean",
+      "sha256": "eea6d1f3072a05c048dcc8613985b7856b9e92b7d68f1231aa68e3e42a6ba89c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.InvariantComplexAction",
+      "path": "FairDivision/Topology/Volovikov/InvariantComplexAction.lean",
+      "sha256": "2f48cde542ae75b501edb30b2ae72c0a8e5c99739c3929e5a22ee24da38b193b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinFaceAction",
+      "path": "FairDivision/Topology/Volovikov/JoinFaceAction.lean",
+      "sha256": "e2d9e0519b170c7f7b52363168f88690b80b5f22e9102c7d9fa13873277b2cdc",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinFaceCellAction",
+      "path": "FairDivision/Topology/Volovikov/JoinFaceCellAction.lean",
+      "sha256": "5e12f1036b950d88ed29044dd6252c3033d056eb67c252effdbf0861959584ed",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinFaceCellActionLaws",
+      "path": "FairDivision/Topology/Volovikov/JoinFaceCellActionLaws.lean",
+      "sha256": "98293d2d5862cf93bc32bf4a5eed95c8ebe48f800783d1d2947cef225bd4692d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinFaceOrbits",
+      "path": "FairDivision/Topology/Volovikov/JoinFaceOrbits.lean",
+      "sha256": "12f04fb2445c6448c4cf58d61f42cc24c70c91753cd59436b3ac0f505d6fe512",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinFaceRealizationAction",
+      "path": "FairDivision/Topology/Volovikov/JoinFaceRealizationAction.lean",
+      "sha256": "d5d9fcccfac908c52acbd411d526c622d4858ec8cb0ccf4f6f0c9d7c6cd428a9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitBoundaryCompatibility",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitBoundaryCompatibility.lean",
+      "sha256": "f867232f19c560aa7dd99715ec0a046d4d5f59e3d10434eac25192ba6b30848b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitComplex",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitComplex.lean",
+      "sha256": "3c5219467d50e8ea29bf740b816227dcd352d15486aa24ea60ac45875953f273",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitExtension",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitExtension.lean",
+      "sha256": "9709a8025bc1fa656d4c022588d526c59b54b544c362d1350700a716a87e4135",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitHomotopy",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitHomotopy.lean",
+      "sha256": "b119a19aa4c93a2bc8e46f61880e29950d0a0b18bf63e92ecd1f166b69a31fed",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitIntersection",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitIntersection.lean",
+      "sha256": "2f8c2f93bf99a50d363911c773f4289308ba672d776ea7c492e103a0d23a9258",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitPasteEquivariant",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitPasteEquivariant.lean",
+      "sha256": "4c45cc5da8aa4d22721eccb45b1e74fa94e374c2eed01fbc6755f95480662424",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitPastedMap",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitPastedMap.lean",
+      "sha256": "c55b46098122898e2005193c69a544813086c3c0a756f36e3932b176616a82e3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitPasting",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitPasting.lean",
+      "sha256": "13cf1a722347e8cf0816928ce870c8027173bc3a6db09a31d83525e38fab5a3f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitRepresentativeFilling",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitRepresentativeFilling.lean",
+      "sha256": "8d970912fd2f92c884688612ae0918802524a12650b855adc45f8ef9995c4c1a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitRepresentativesFinite",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitRepresentativesFinite.lean",
+      "sha256": "b1bf91efcceef68ed680577d4bd904ed18256349f1d9b9eaceb1c63e880b0338",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinOrbitTransport",
+      "path": "FairDivision/Topology/Volovikov/JoinOrbitTransport.lean",
+      "sha256": "4defd5996c1c7c80baf06d6520e6e0f725452b67a628e29648eeacce7602c846",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinPathSpaceAction",
+      "path": "FairDivision/Topology/Volovikov/JoinPathSpaceAction.lean",
+      "sha256": "4c6a3e7767b6a9859f552549dddf9d61430a7e8cd9d3e6eaeb2df2b4b870dd16",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.JoinVertexSkeleton",
+      "path": "FairDivision/Topology/Volovikov/JoinVertexSkeleton.lean",
+      "sha256": "9bdce4ca65d08c25ffd601bdbe39f2ccfd1fa462c9145561624b08a096f0e29b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ModTwoConnectedObstruction",
+      "path": "FairDivision/Topology/Volovikov/ModTwoConnectedObstruction.lean",
+      "sha256": "085b78bf8b3e512b516e2631ea7f20c55db8c7322453fbdf286e37a35c001b92",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ModTwoJoinObstruction",
+      "path": "FairDivision/Topology/Volovikov/ModTwoJoinObstruction.lean",
+      "sha256": "1cbf05eadfafe63ddace178db5a3e3c69bf4d07aa626a375df2d31d2c19164b7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ModTwoRealFourier",
+      "path": "FairDivision/Topology/Volovikov/ModTwoRealFourier.lean",
+      "sha256": "14b6d29e3cbca61dab25d292f8e0a338eca5af18dd0a3c5eced1a64ca062ca58",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.Normalization",
+      "path": "FairDivision/Topology/Volovikov/Normalization.lean",
+      "sha256": "3207d6c4596384e564dde8b271d0449397c1a52b90d26780e3fb77797f498ea5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeCharacterExtrema",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeCharacterExtrema.lean",
+      "sha256": "2de7def834b3b0418924d6b5496c0f008b7978b64880c0414d992ef30868e7c5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeCharacterJoin",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeCharacterJoin.lean",
+      "sha256": "20bce764ea4b5ad8473820592e0625a10e6b2a1986971e516df1bb394a35e965",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeConnectedObstruction",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeConnectedObstruction.lean",
+      "sha256": "662a67c7dbf2d8b000b4768d45a5ce96c7758d29fc7eb9972a9c97f7caf3cba0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeCyclicObstruction",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeCyclicObstruction.lean",
+      "sha256": "7f77bc4dbe5ee862b1b9a41f5357103a7bc1e5a4c074ac9e10bcbd3ff029f006",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeElementaryCharacterJoin",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeElementaryCharacterJoin.lean",
+      "sha256": "8f5cfd96343a23c37ccc39596a3d8ef622d6eca6dc411feb8e7104b795049756",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeElementaryObstruction",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeElementaryObstruction.lean",
+      "sha256": "c1e881cd1c9a1c1cae0db1db1f65bdcdaa85c43b81d98edcb1fce8b2905d3aac",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeTensorDifferential",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeTensorDifferential.lean",
+      "sha256": "763468f1ed452367f12146b3f4734e96a1965d84ee8793ebee3958117302e947",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeTensorSource",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeTensorSource.lean",
+      "sha256": "770b4b5bb209efd563257dc988844d353dc03d55cf0d9e68650f32e405db199c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.OddPrimeTwistedJoinChains",
+      "path": "FairDivision/Topology/Volovikov/OddPrimeTwistedJoinChains.lean",
+      "sha256": "e712b8e05be301e8dc84ce25dece5c5881a342289c1fe37040665370949b0b41",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.PositionAction",
+      "path": "FairDivision/Topology/Volovikov/PositionAction.lean",
+      "sha256": "662218c9e8bb3e5bd3a08c9dd451ba6405defb44a4cdf70f8098d26732580092",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.PrimePowerConnectedObstruction",
+      "path": "FairDivision/Topology/Volovikov/PrimePowerConnectedObstruction.lean",
+      "sha256": "f259494d29d45f1d16c6e055fb21ffe3ff06219d8df3fd9df27b9499af49637b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.RealComplexJoinAlgebra",
+      "path": "FairDivision/Topology/Volovikov/RealComplexJoinAlgebra.lean",
+      "sha256": "c7ccbf4848ab3f96ed7bad78a694670f853fee9a0e6e90fe36868e499b9a15be",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.RealComplexJoinEquivariance",
+      "path": "FairDivision/Topology/Volovikov/RealComplexJoinEquivariance.lean",
+      "sha256": "86c2dd23cf13891bd2c4a577456948516af844c4d59f565c9f279e91a7971552",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.RealComplexJoinMap",
+      "path": "FairDivision/Topology/Volovikov/RealComplexJoinMap.lean",
+      "sha256": "6ec070fc7cf07d8a09f87bedc0783cd2b8df125026ce81d1d92173887fe708e2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.RealComplexJoinReduction",
+      "path": "FairDivision/Topology/Volovikov/RealComplexJoinReduction.lean",
+      "sha256": "89fa7a9b86aa3c66a876ac0cd27cb0da286033c92c94a5448ead938774158350",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ReducedSphere",
+      "path": "FairDivision/Topology/Volovikov/ReducedSphere.lean",
+      "sha256": "5faa1b09228b23efbef0f9d850143022588019a7867f254357124f4454b612d4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ReducedSphereJoinReduction",
+      "path": "FairDivision/Topology/Volovikov/ReducedSphereJoinReduction.lean",
+      "sha256": "212e8c895237097ede951fa13bbfe27fe5e37db4546dcaa39f8afceb07956c32",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.RegularCharacterEigenvectors",
+      "path": "FairDivision/Topology/Volovikov/RegularCharacterEigenvectors.lean",
+      "sha256": "0e3cceaa2d2d0d658254961e1f11bde10ed357cafd81166fd4fc54197e5c41d7",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicAlgebra",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicAlgebra.lean",
+      "sha256": "702723f01cc51287954d1f5e554cd1cc6a58abb3d86a69dfa6bd8dc5eb240ab1",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicApproximation",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicApproximation.lean",
+      "sha256": "9644ad685ac16b81ed90942907db5162bcf99d7b1aa1206654b8ca66aa07fde3",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicJoinObstruction",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicJoinObstruction.lean",
+      "sha256": "d8af1abf9a62073922d5280f4e02bde753d3c997dfd632c36f02a561acceb681",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicSource",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicSource.lean",
+      "sha256": "917c78d523427e29563ce9d43d92bed98b67c514a3f0d8ced5c970509a2b23e5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicSupportMatrices",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicSupportMatrices.lean",
+      "sha256": "ac540c8aeae4f42b817ca77c809a09decb9f11493ef46c91e7ea346259ebec0f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicTarget",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicTarget.lean",
+      "sha256": "a4deeed097808623cc762f13829d3d2e5508f4ff92db4f224024a9e082509301",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ShiftedCyclicTargetBlocks",
+      "path": "FairDivision/Topology/Volovikov/ShiftedCyclicTargetBlocks.lean",
+      "sha256": "da25dfc5a1a6ea469fbd0c48b3dcd2a5552ab7e54e0068873ad1d3033db1bb7a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.SignedCoordinateJoin",
+      "path": "FairDivision/Topology/Volovikov/SignedCoordinateJoin.lean",
+      "sha256": "d30a6791a49e2df08585a274788c591a90e351520bd623bc40b5dac21d98031b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.SimplexCone",
+      "path": "FairDivision/Topology/Volovikov/SimplexCone.lean",
+      "sha256": "7d9df26981ad31392f2719d7d1f1bd730d39068fc575fac4cd0d34bd37454a12",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.SimplexConeHomeomorph",
+      "path": "FairDivision/Topology/Volovikov/SimplexConeHomeomorph.lean",
+      "sha256": "43d651bfa354bcdfb5ec7ef85f4a6fc2e48f883fc36443decf06d0d1b8ac6333",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.SimplexConeInjective",
+      "path": "FairDivision/Topology/Volovikov/SimplexConeInjective.lean",
+      "sha256": "733233edd9be9792a83449854d33fbde96e9131178a03fcfa78ab2eedfbff029",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.SimplexConeSurjective",
+      "path": "FairDivision/Topology/Volovikov/SimplexConeSurjective.lean",
+      "sha256": "5fe6306c4a06b84011513a54a6c95d7e711ebd2ab5a4e4e12853f77f56d74b09",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.TopologicalJoin",
+      "path": "FairDivision/Topology/Volovikov/TopologicalJoin.lean",
+      "sha256": "f28e38b2fa7720444db38018831f94c9d8e1da0155597d7b6734c40b1d1d2489",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.TopologicalJoinLift",
+      "path": "FairDivision/Topology/Volovikov/TopologicalJoinLift.lean",
+      "sha256": "3777f788feecf2829026d643753ada90b7a9434db7e06764c3afcc5714511caa",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoin",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoin.lean",
+      "sha256": "84a67d4ff5d87abeec329296bbc32392b6b6633ed2bb38dd21dcb5d2db45358f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDKGMRealization",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDKGMRealization.lean",
+      "sha256": "a44cdd0ef5b57af50fb6ef1c41627c7000144157f472517d86cdce460a84b7f2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingCoordinates",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingCoordinates.lean",
+      "sha256": "7f285dad53064035feaabfe119b762505b3416be66ecc328045a87a9ac3524db",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingEquivariance",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingEquivariance.lean",
+      "sha256": "a239fb27f37d0177f48050dfbf01b54fb78180477bd2eff54d4d4322cdd7bbb2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingFace",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingFace.lean",
+      "sha256": "b66aff8d1725b08869fc573ae9b92225d102439afca1ca97a273826362a54c3c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingHomeomorph",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingHomeomorph.lean",
+      "sha256": "dfac5d80f38407c5a0b4cdf004b6b04b3a0052330b8f723a818f9e6e0eae460c",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingHomeomorphAction",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingHomeomorphAction.lean",
+      "sha256": "0191b80a8ceedf59070b121e510c07e01f32acd796f5c041de818208e05e02b9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingInjective",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingInjective.lean",
+      "sha256": "ba3eab5a483c7c7ac9eefb51f791ddcec27767332f0d342f0ba9655254d4df19",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingMass",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingMass.lean",
+      "sha256": "8a0bd45f784d9a5c2c8ea4d0d0b3e7e713f48913c8d5f1d803d544e76cef8348",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingPushforward",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingPushforward.lean",
+      "sha256": "a786d2932a5499f7dedcf30abde8b23821ea15818573c1ded3423f5362cdef3f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingRestriction",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingRestriction.lean",
+      "sha256": "b0aa873ee0a5384720ed4f5eda3d7a712ff8366a11342947e374bc2d36bf6a9b",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingSurjective",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingSurjective.lean",
+      "sha256": "669d8a7a899584484dc2c5ce6b903e33bc014c4ca3377d51eafa644ae49a84b5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingWeights",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingWeights.lean",
+      "sha256": "1c08d6dec8c8eac4e9c8362d1a14e526399858fde21da7ea9368ac4d487e18e2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinDoublingZeroMass",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinDoublingZeroMass.lean",
+      "sha256": "dfc6df0c4d06d35bfc955ee1a617d9386a0580a1f86d719749f34e156d331ef8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinEquivariantExtension",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinEquivariantExtension.lean",
+      "sha256": "42a66c6ef1fde6ea80caeae3a936b5f9a19f5ca0c4e917da73810d6fcfaee87d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinEquivariantHomotopy",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinEquivariantHomotopy.lean",
+      "sha256": "52ef0d2a428962a293ddcde390a817449ec89971e7e4debb7fe1d380c6876a1d",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinEquivariantTransfer",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinEquivariantTransfer.lean",
+      "sha256": "7af4da439d52bf97ebe7158759360a80c0ab99363a60aa5b7d5707e464bd03b5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinLabelEquiv",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinLabelEquiv.lean",
+      "sha256": "79349e8ec4d7c2ede87a9885386c611589cdd644b4601b7c248fa5ab396a4f59",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinOrbitQuotient",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinOrbitQuotient.lean",
+      "sha256": "ad5beaba8800ab3f7dc546d93de1b0573c339d7a2a5518842354e4224856eab0",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinRealization",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinRealization.lean",
+      "sha256": "550b20f75f42089973c5359c6b06e974a6048dbcd4a2d414bc443839b00d1cd2",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.UniversalJoinSkeleton",
+      "path": "FairDivision/Topology/Volovikov/UniversalJoinSkeleton.lean",
+      "sha256": "03afb1a628fd857633869e9b2c7d373da3a71444752fe6e3184b8cb323f15170",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "FairDivision.Topology.Volovikov.ZeroReduction",
+      "path": "FairDivision/Topology/Volovikov/ZeroReduction.lean",
+      "sha256": "f349f9bda0c8a4a9cf1508e8b350b1e3cddbc4564eb0e2eb4ff708491e61355f",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "third_party.dkgm-topology-source.RequestProject",
+      "path": "third_party/dkgm-topology-source/RequestProject.lean",
+      "sha256": "384ed26a2ee5041622013a206e5ae174abc70acd8720047e2fb531dda8d143de",
+      "origin": "frozen-vendored-package-entrypoint"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Algebra",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/Algebra.lean",
+      "sha256": "f4d469b334464e382ed5fdd29dd0c38f9df0c9852f11b3c26872545db3e8c3dd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Chains",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/Chains.lean",
+      "sha256": "3926b5d35f1d27390d175e4df5ec0f15a248bfa3f337febd638634c72f341ee4",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.JoinAction",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/JoinAction.lean",
+      "sha256": "f2efa74fcf124cfe76993094a93cd5b28f2049733ef41fa45ee113c973c50fcb",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.JoinChains",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/JoinChains.lean",
+      "sha256": "2e9749a25cff698a13dc886e84e26f77f16f74c52ec65686109603ae8d5d7ea8",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.JoinGeom",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/JoinGeom.lean",
+      "sha256": "4f1243a860e8f88cdaaad19a06d19fc1a4349ffb6f75e12fd126d3131adbf466",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Main",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/Main.lean",
+      "sha256": "8cd7312be4e81ecbcc7d68667e87d19158460724ee03ca1fe43ed156595c53af",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Subdivision",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Dold/Subdivision.lean",
+      "sha256": "f56bccf6e4c0da77dad08d07adcd81c7239128224c36998d1aa7c8609bb49412",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Algebra",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/ElemAb/Algebra.lean",
+      "sha256": "6ccc6bdfd7050b82f0006e6ba60212d1fb7da4aac0a1e04696f169e7b236b6dd",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Main",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/ElemAb/Main.lean",
+      "sha256": "a005534fe601d254a5d515f5c1c48f314070e087f27bb6c8aaaa1c69b96ad2d5",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Source",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/ElemAb/Source.lean",
+      "sha256": "75cdff9dfab3dcbb17d3f39829aa213ccacbac0dd19ef4270cc2822c8a14b80a",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Target",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/ElemAb/Target.lean",
+      "sha256": "35c51156b648ae9e4751e949738af2107ac05f7bbc8fabd0cca8bbc6630d8049",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.JoinBU",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/JoinBU.lean",
+      "sha256": "2694575daf30855a96f2ce589cc3be2a556ec679c703a556988c296e07dbd4e9",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Lemma1Partial",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Lemma1Partial.lean",
+      "sha256": "a4926a738cdc9f85d8bd1c646381920f6ac2bbd96581754a28d40650c76c7878",
+      "origin": "successful-round-4-proof-closure"
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Statement",
+      "path": "third_party/dkgm-topology-source/RequestProject/Dvoretzky/Statement.lean",
+      "sha256": "8faf9fd83f1eb60d87dd781309fecc4605e275f072e07209f8b18045f6e95da0",
+      "origin": "successful-round-4-proof-closure"
+    }
+  ]
+}

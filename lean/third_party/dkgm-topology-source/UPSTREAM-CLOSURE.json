@@ -1,0 +1,132 @@
+{
+  "repository": "https://github.com/akopjan/Dolnikov-Karasev-Gromov-Milman",
+  "revision": "a32fae66a704d736f0c2c3ec9b14afd22979fe9f",
+  "roots": [
+    "RequestProject.Dvoretzky.ElemAb.Main",
+    "RequestProject.Dvoretzky.Dold.Main"
+  ],
+  "modules": [
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Main",
+      "path": "RequestProject/Dvoretzky/Dold/Main.lean",
+      "bytes": 18826,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.JoinGeom",
+        "RequestProject.Dvoretzky.Dold.Algebra"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Algebra",
+      "path": "RequestProject/Dvoretzky/Dold/Algebra.lean",
+      "bytes": 7719,
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.JoinGeom",
+      "path": "RequestProject/Dvoretzky/Dold/JoinGeom.lean",
+      "bytes": 10868,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.Subdivision",
+        "RequestProject.Dvoretzky.Dold.JoinAction",
+        "RequestProject.Dvoretzky.Lemma1Partial"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Lemma1Partial",
+      "path": "RequestProject/Dvoretzky/Lemma1Partial.lean",
+      "bytes": 16836,
+      "imports": [
+        "RequestProject.Dvoretzky.JoinBU"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.JoinBU",
+      "path": "RequestProject/Dvoretzky/JoinBU.lean",
+      "bytes": 9270,
+      "imports": [
+        "RequestProject.Dvoretzky.Statement"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Statement",
+      "path": "RequestProject/Dvoretzky/Statement.lean",
+      "bytes": 2825,
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.JoinAction",
+      "path": "RequestProject/Dvoretzky/Dold/JoinAction.lean",
+      "bytes": 11233,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.JoinChains",
+        "RequestProject.Dvoretzky.Dold.Algebra"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.JoinChains",
+      "path": "RequestProject/Dvoretzky/Dold/JoinChains.lean",
+      "bytes": 14953,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.Chains"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Chains",
+      "path": "RequestProject/Dvoretzky/Dold/Chains.lean",
+      "bytes": 8174,
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.Dold.Subdivision",
+      "path": "RequestProject/Dvoretzky/Dold/Subdivision.lean",
+      "bytes": 13438,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.Chains"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Main",
+      "path": "RequestProject/Dvoretzky/ElemAb/Main.lean",
+      "bytes": 14681,
+      "imports": [
+        "RequestProject.Dvoretzky.ElemAb.Source",
+        "RequestProject.Dvoretzky.ElemAb.Target"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Target",
+      "path": "RequestProject/Dvoretzky/ElemAb/Target.lean",
+      "bytes": 13620,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.JoinChains",
+        "RequestProject.Dvoretzky.ElemAb.Algebra"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Algebra",
+      "path": "RequestProject/Dvoretzky/ElemAb/Algebra.lean",
+      "bytes": 14392,
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "RequestProject.Dvoretzky.ElemAb.Source",
+      "path": "RequestProject/Dvoretzky/ElemAb/Source.lean",
+      "bytes": 8547,
+      "imports": [
+        "RequestProject.Dvoretzky.Dold.Main",
+        "RequestProject.Dvoretzky.ElemAb.Algebra"
+      ]
+    }
+  ],
+  "external_imports": [
+    "Mathlib"
+  ]
+}

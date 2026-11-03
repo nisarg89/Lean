@@ -1,0 +1,99 @@
+'FairDivision.BF.MainTheorems.identical_prime_power_common_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.MainTheorems.identical_prime_power_ef11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.MainTheorems.identical_common_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.MainTheorems.identical_ef11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.MainTheorems.heterogeneous_prime_power_ef11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.MainTheorems.heterogeneous_one_ef11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.MainTheorems.heterogeneous_one_or_prime_power_ef11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.exists_balanced_ef11_identical_prime_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.exists_balanced_ef11_identical' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.exists_balanced_ef11_heterogeneous_prime_power' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.goodsEF1For_iff_actual_item_of_envy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.choresEF1For_iff_actual_item_of_envy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.heterogeneous_primePower_exists_balanced_ordinaryEF1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.identical_exists_balanced_goodsEF1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.identical_exists_balanced_choresEF1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.sharp_swap_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.ReplacementFairness.identical_exists_enviedReplacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.ReplacementFairness.primePower_exists_enviedReplacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.ReplacementFairness.identical_exists_ownReplacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.ReplacementFairness.primePower_exists_ownReplacement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.feasibleGoodsEF1_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.primePower_exists_full_capacity_goodsEF1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.identical_exists_full_capacity_goodsEF1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_balanced_density_partition_cases' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_balanced_density_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.sharp_balanced_density_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.sharp_balanced_density_partitions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_balanced_nonlinear_discrepancy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_balanced_monotone_discrepancy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_balanced_antitone_discrepancy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.nonlinear_constant_two_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.monotone_constant_one_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.exists_balanced_sparse_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_coverage_cardinality_pair' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.coverage_constant_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.coverage_sharp_equal_parts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.coverage_hit_set_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.cardinality_hit_set_representation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.coverage_cardinality_sparsity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.exists_disjoint_equal_parameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.unitDeletion_distinct_values_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.caro_yuster_generic_comparison' depends on axioms: [propext, Quot.sound]
+'FairDivision.BF.Applications.exists_disjoint_equal_clique_numbers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_disjoint_equal_independence_numbers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.exists_disjoint_equal_chromatic_numbers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FairDivision.BF.Applications.graphParameter_values_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FairDivision.BF.Applications.graphParameter_caro_yuster_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,20 @@
+{
+  "verified_at_utc": "2026-11-02T03:32:14.061474+00:00",
+  "round": 4,
+  "target": "FairDivision.BF.Certificate",
+  "build_exit": 0,
+  "build_jobs": 9502,
+  "audit_exit": 0,
+  "audited_endpoints": 47,
+  "axioms_seen": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_archive": "fe-sources-fe-20261101T145451Z-round-4.tar.gz",
+  "source_archive_sha256": "c72ec2d1167a5d91de1d9b2e415710e1721a88b90a1f555c6054f7868f3c753e",
+  "diagnostics_archive_sha256": "3bfc41b45e66d4f6a8b05e3ee686d37fb9fa5e29ec7cd3fbeb4cfcde4dfd7631",
+  "scope": "BF certificate including existence, swap, applications; removed query-complexity topic excluded. FE not checked in this server round.",
+  "source_correspondence": "The source manifests record the 456 proof-closure files used in this successful server build.",
+  "packaging": "Repository certificate build and 47-endpoint audit passed: https://github.com/nisarg89/Lean/actions/runs/41530290076"
+}

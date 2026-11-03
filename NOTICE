@@ -1,0 +1,39 @@
+Balanced Fair Division — Lean certificate
+
+Original project code is distributed under the Apache License, Version 2.0.
+The repository LICENSE and lean/LICENSE contain those terms. This notice
+identifies reused work; it does not assign authorship of individual Lean
+files or alter any applicable license.
+
+This release includes the following upstream work:
+
+1. Dolnikov–Karasev–Gromov–Milman topology proofs
+   Repository: https://github.com/akopjan/Dolnikov-Karasev-Gromov-Milman
+   Revision: a32fae66a704d736f0c2c3ec9b14afd22979fe9f
+   Attribution: the upstream project's contributors.
+   License: Apache-2.0, preserved in
+   lean/third_party/dkgm-topology-source/LICENSE.
+   Fourteen original proof modules retain their original namespaces and
+   proof bodies. Local package metadata integrates them with the pinned
+   stable Lean/Mathlib toolchain. The source inventory and provenance are
+   retained alongside the package.
+
+2. PFR finite disjoint-coordinate independence proof
+   Repository: https://github.com/teorth/pfr
+   Revision: 7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f
+   Original path: PFR/Mathlib/Probability/Independence/Kernel/IndepFun.lean
+   Attribution: the upstream PFR contributors.
+   License: Apache-2.0, preserved in
+   lean/third_party/pfr-probability-source/LICENSE.
+   Local path: lean/FairDivision/Probability/FiniteDisjointBlocks.lean.
+   The extraction retains the grouped-independence proof, adapts the
+   module/import exposure header, and adds local measure-level wrappers.
+
+The build uses Lean and Mathlib and their pinned companion packages.
+They are fetched separately and retain their own licenses and notices.
+Those packages use Apache-2.0 except lean4-cli (Cli), which uses MIT and
+retains its upstream notice: Copyright (c) 2021 mhuisi.
+
+THIRD_PARTY.md records the exact dependency pins, source links, adaptations,
+and retained license locations. No endorsement by an upstream project or
+contributor is asserted.

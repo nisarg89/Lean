@@ -1,0 +1,22 @@
+{
+  "challenge_module": "ComparatorChallenges.BalancedFairDivision",
+  "solution_module": "FairDivision.BF.Certificate",
+  "theorem_names": [
+    "FairDivision.BF.MainTheorems.identical_prime_power_common_threshold",
+    "FairDivision.BF.MainTheorems.identical_prime_power_ef11",
+    "FairDivision.BF.MainTheorems.identical_common_threshold",
+    "FairDivision.BF.MainTheorems.identical_ef11",
+    "FairDivision.BF.MainTheorems.heterogeneous_prime_power_ef11",
+    "FairDivision.BF.MainTheorems.heterogeneous_one_ef11",
+    "FairDivision.BF.MainTheorems.heterogeneous_one_or_prime_power_ef11",
+    "FairDivision.BF.exists_balanced_ef11_identical_prime_power",
+    "FairDivision.BF.exists_balanced_ef11_identical",
+    "FairDivision.BF.exists_balanced_ef11_heterogeneous_prime_power"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

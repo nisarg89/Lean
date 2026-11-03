@@ -1,0 +1,271 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/formalization.schema.json
+# BF mathematical catalogue; paths are relative to lean/.
+# Repository-wide status and executable targets are owned by ../certificates.json.
+version: "v0.4"
+project:
+  name: "Balanced Fair Division Lean certificate"
+  description: >-
+    Lean formalization of balanced EF[1,1] existence, the sharp swap threshold, and supporting
+    applications from Balanced Fair Division.
+  authors:
+    - "Balanced Fair Division formalization contributors"
+  license: "Apache-2.0"
+sources:
+  - title: "Balanced Fair Division"
+    authors:
+      - "Benjamin Cookson"
+      - "Jakob de Raaij"
+      - "Max Dupré la Tour"
+      - "Nisarg Shah"
+    id: "balanced-fair-division-manuscript"
+    type: "article"
+    location: >-
+      Balanced Fair Division manuscript: existence theorems, sharp swap threshold and
+      supporting applications.
+    relationship: "formalizes"
+    note: >-
+      The source is the Balanced Fair Division manuscript. The manuscript is not
+      redistributed in this repository.
+status:
+  scope: >-
+    The repository certificate build and axiom audit have passed in GitHub Actions.
+    All 47 released endpoints use only the three axioms listed below. Optional Comparator
+    checks and cross-commit baseline sealing are separate from this build and audit.
+  axioms:
+    - "propext"
+    - "Classical.choice"
+    - "Quot.sound"
+  main_results:
+    - declaration: "FairDivision.BF.MainTheorems.identical_prime_power_common_threshold"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.MainTheorems.identical_prime_power_ef11"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.MainTheorems.identical_common_threshold"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.MainTheorems.identical_ef11"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.MainTheorems.heterogeneous_prime_power_ef11"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.MainTheorems.heterogeneous_one_ef11"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.MainTheorems.heterogeneous_one_or_prime_power_ef11"
+      file: "FairDivision/BF/MainTheorems.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.exists_balanced_ef11_identical_prime_power"
+      file: "FairDivision/BF/Existence.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.exists_balanced_ef11_identical"
+      file: "FairDivision/BF/Existence.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.exists_balanced_ef11_heterogeneous_prime_power"
+      file: "FairDivision/BF/Existence.lean"
+      comparator_config: "ComparatorChallenges/BalancedFairDivision.json"
+    - declaration: "FairDivision.BF.sharp_swap_threshold"
+      file: "FairDivision/BF/SwapThreshold.lean"
+    - declaration: "FairDivision.BF.Applications.primePower_exists_full_capacity_goodsEF1"
+      file: "FairDivision/BF/Applications/Capacities.lean"
+    - declaration: "FairDivision.BF.Applications.identical_exists_full_capacity_goodsEF1"
+      file: "FairDivision/BF/Applications/Capacities.lean"
+    - declaration: "FairDivision.BF.Applications.sharp_balanced_density_partitions"
+      file: "FairDivision/BF/Applications/DensityExistence.lean"
+    - declaration: "FairDivision.BF.Applications.exists_balanced_nonlinear_discrepancy"
+      file: "FairDivision/BF/Applications/NonlinearDiscrepancy.lean"
+    - declaration: "FairDivision.BF.Applications.exists_balanced_monotone_discrepancy"
+      file: "FairDivision/BF/Applications/NonlinearDiscrepancy.lean"
+    - declaration: "FairDivision.BF.Applications.exists_balanced_sparse_coverage"
+      file: "FairDivision/BF/Applications/Coverage.lean"
+    - declaration: "FairDivision.BF.Applications.coverage_sharp_equal_parts"
+      file: "FairDivision/BF/Applications/Coverage.lean"
+    - declaration: "FairDivision.BF.Applications.exists_disjoint_equal_parameters"
+      file: "FairDivision/BF/Applications/EqualParameters.lean"
+automation:
+  methods:
+    - method: "agent"
+      framework: "Codex"
+      tool_setup: >-
+        Human-directed collaborating agents; source repair and explicit focused checks were
+        coordinated through one compiler. Final source-snapshot verification used a complete BF
+        server build and a separate axiom audit.
+  notes: >-
+    This is an agent-assisted formalization. The bibliographic authors listed under sources are
+    manuscript authors; project contributors are credited collectively here without assigning
+    individual Lean-file authorship. No model-specific compute or monetary cost is asserted.
+review:
+  status: "No independent review signoff recorded"
+  notes: >-
+    Kernel build/axiom evidence and a bounded agent-assisted source-statement comparison are
+    recorded separately. This catalogue does not assert independent peer review, author semantic
+    approval. The repository certificate build and axiom audit passed in GitHub Actions.
+alignment:
+  source_id: "balanced-fair-division-manuscript"
+  statement_guide: "docs/STATEMENTS.md"
+  complete_audited_endpoint_list: "verification/expected-endpoints.json"
+  principal_results:
+    - source_label: "thm:identical-prime-power"
+      declarations:
+        - "FairDivision.BF.MainTheorems.identical_prime_power_common_threshold"
+        - "FairDivision.BF.MainTheorems.identical_prime_power_ef11"
+      scope: >-
+        Prime-power agent count with a prime base and positive exponent; all item counts; arbitrary
+        common real bundle valuation. The stronger export gives one common threshold for the same
+        balanced allocation.
+    - source_label: "thm:identical-all-n"
+      declarations:
+        - "FairDivision.BF.MainTheorems.identical_common_threshold"
+        - "FairDivision.BF.MainTheorems.identical_ef11"
+      scope: "Every positive agent count, including one, and every item count; arbitrary common real bundle valuation."
+    - source_label: "thm:heterogeneous-all-m"
+      declarations:
+        - "FairDivision.BF.MainTheorems.heterogeneous_prime_power_ef11"
+        - "FairDivision.BF.MainTheorems.heterogeneous_one_ef11"
+        - "FairDivision.BF.MainTheorems.heterogeneous_one_or_prime_power_ef11"
+      scope: >-
+        Independent arbitrary real bundle valuations for prime-power agent counts. Separate facades
+        include the elementary one-agent case.
+  supplementary_results:
+    - source_label: "thm:swap; sec:exchange"
+      file: "FairDivision/BF/SwapThreshold.lean"
+      declarations:
+        - "FairDivision.BF.sharp_swap_threshold"
+      scope: >-
+        For t≥1, every equal-q allocation satisfies the swap guarantee when q≤2t, including q=0. For
+        q≥2t+1 and every sufficiently large n, one common normalized strictly monotone submodular
+        valuation makes every equal-q allocation EFX and none swap-fair.
+    - source_label: "cor:heterogeneous-monotone and identical monotone consequences"
+      file: "FairDivision/BF/MonotoneFairness.lean"
+      declarations:
+        - "FairDivision.BF.goodsEF1For_iff_actual_item_of_envy"
+        - "FairDivision.BF.choresEF1For_iff_actual_item_of_envy"
+        - "FairDivision.BF.heterogeneous_primePower_exists_balanced_ordinaryEF1"
+        - "FairDivision.BF.identical_exists_balanced_goodsEF1"
+        - "FairDivision.BF.identical_exists_balanced_choresEF1"
+      scope: "Ordinary goods/chores EF1 restoration, including actual item witnesses when strict envy occurs."
+    - source_label: "prop:replacement-fairness; prop:own-replacement-fairness"
+      file: "FairDivision/BF/ReplacementFairnessExistence.lean"
+      declarations:
+        - "FairDivision.BF.ReplacementFairness.identical_exists_enviedReplacement"
+        - "FairDivision.BF.ReplacementFairness.primePower_exists_enviedReplacement"
+        - "FairDivision.BF.ReplacementFairness.identical_exists_ownReplacement"
+        - "FairDivision.BF.ReplacementFairness.primePower_exists_ownReplacement"
+      scope: >-
+        Equal q-item bundles with q≥1, in the identical or heterogeneous prime-power regimes. A
+        replacement item may come from another bundle; the original comparison valuation is
+        retained.
+    - source_label: "cor:applications-capacities"
+      file: "FairDivision/BF/Applications/Capacities.lean"
+      declarations:
+        - "FairDivision.BF.Applications.feasibleGoodsEF1_iff"
+        - "FairDivision.BF.Applications.primePower_exists_full_capacity_goodsEF1"
+        - "FairDivision.BF.Applications.identical_exists_full_capacity_goodsEF1"
+      scope: "Full equal capacities with monotone goods valuations, including capacity zero. No submodularity assumption."
+    - source_label: "thm:applications-density"
+      file: "FairDivision/BF/Applications/DensityExistence.lean"
+      declarations:
+        - "FairDivision.BF.Applications.exists_balanced_density_partition_cases"
+        - "FairDivision.BF.Applications.exists_balanced_density_partition"
+        - "FairDivision.BF.Applications.sharp_balanced_density_bound"
+        - "FairDivision.BF.Applications.sharp_balanced_density_partitions"
+      scope: >-
+        For each fixed N and k with 2≤k≤N, all graphs have a balanced partition with the stated
+        bound and some graph requires that bound in every balanced partition.
+    - source_label: "thm:applications-discrepancy"
+      files:
+        - "FairDivision/BF/Applications/NonlinearDiscrepancy.lean"
+        - "FairDivision/BF/Applications/DiscrepancySharpness.lean"
+      declarations:
+        - "FairDivision.BF.Applications.exists_balanced_nonlinear_discrepancy"
+        - "FairDivision.BF.Applications.exists_balanced_monotone_discrepancy"
+        - "FairDivision.BF.Applications.exists_balanced_antitone_discrepancy"
+        - "FairDivision.BF.Applications.nonlinear_constant_two_sharp"
+        - "FairDivision.BF.Applications.monotone_constant_one_sharp"
+      scope: >-
+        Every positive number of parts. A one-item Lipschitz bound L≥0 gives spread at most 2L, or L
+        for either monotonicity direction, with sharp constants.
+    - source_label: "cor:applications-coverage"
+      file: "FairDivision/BF/Applications/Coverage.lean"
+      declarations:
+        - "FairDivision.BF.Applications.exists_balanced_sparse_coverage"
+        - "FairDivision.BF.Applications.exists_coverage_cardinality_pair"
+        - "FairDivision.BF.Applications.coverage_constant_sharp"
+        - "FairDivision.BF.Applications.coverage_sharp_equal_parts"
+        - "FairDivision.BF.Applications.coverage_hit_set_representation"
+        - "FairDivision.BF.Applications.cardinality_hit_set_representation"
+        - "FairDivision.BF.Applications.coverage_cardinality_sparsity"
+      scope: >-
+        Coverage spread at most t and balanced cardinalities for the same partition; sharpness,
+        equal-size examples and the family-model interpretations are included.
+    - source_label: "thm:applications-parameters"
+      files:
+        - "FairDivision/BF/Applications/EqualParameters.lean"
+        - "FairDivision/BF/Applications/EqualParametersGraphs.lean"
+      declarations:
+        - "FairDivision.BF.Applications.exists_disjoint_equal_parameters"
+        - "FairDivision.BF.Applications.unitDeletion_distinct_values_le"
+        - "FairDivision.BF.Applications.caro_yuster_generic_comparison"
+        - "FairDivision.BF.Applications.exists_disjoint_equal_clique_numbers"
+        - "FairDivision.BF.Applications.exists_disjoint_equal_independence_numbers"
+        - "FairDivision.BF.Applications.exists_disjoint_equal_chromatic_numbers"
+        - "FairDivision.BF.Applications.graphParameter_values_le"
+        - "FairDivision.BF.Applications.graphParameter_caro_yuster_comparison"
+      scope: >-
+        For k>0 and 2k≤N, k disjoint induced subgraphs have equal order floor(N/k)−1 and equal
+        values of one unit-deletion parameter. Clique, independence and chromatic numbers are
+        treated separately.
+  comparator:
+    config: "ComparatorChallenges/BalancedFairDivision.json"
+    challenge: "ComparatorChallenges/BalancedFairDivision.lean"
+    solution_module: "FairDivision.BF.Certificate"
+    covered_declarations:
+      - "FairDivision.BF.MainTheorems.identical_prime_power_common_threshold"
+      - "FairDivision.BF.MainTheorems.identical_prime_power_ef11"
+      - "FairDivision.BF.MainTheorems.identical_common_threshold"
+      - "FairDivision.BF.MainTheorems.identical_ef11"
+      - "FairDivision.BF.MainTheorems.heterogeneous_prime_power_ef11"
+      - "FairDivision.BF.MainTheorems.heterogeneous_one_ef11"
+      - "FairDivision.BF.MainTheorems.heterogeneous_one_or_prime_power_ef11"
+      - "FairDivision.BF.exists_balanced_ef11_identical_prime_power"
+      - "FairDivision.BF.exists_balanced_ef11_identical"
+      - "FairDivision.BF.exists_balanced_ef11_heterogeneous_prime_power"
+    status: >-
+      Prepared independent existence statements; no Comparator run is claimed. Supplementary
+      swap/application endpoints are directly mapped and axiom-audited, not independently compared
+      by this first configuration.
+fidelity:
+  divergences: >-
+    Finite agents/items use Fin types. Positive agent counts and the positive-exponent
+    prime-power predicate are explicit. Common-threshold exports strengthen the EF[1,1]
+    conclusions; the one-agent heterogeneous case is separate. The sharp swap threshold is
+    included. Interpreting definitions are documented in docs/STATEMENTS.md.
+verification:
+  accepted_source_snapshot:
+    record: "verification/accepted-server-result.json"
+    audit_output: "verification/accepted-axioms.log"
+    source_manifest: "verification/source-files.json"
+    source_checksums: "verification/source-files.sha256"
+    proof_closure_files: 456
+    audited_endpoints: 47
+    certificate_exit: 0
+    audit_exit: 0
+    original_archive_sha256: "c72ec2d1167a5d91de1d9b2e415710e1721a88b90a1f555c6054f7868f3c753e"
+  release_packaging:
+    status: "Certificate build and 47-endpoint axiom audit passed"
+    workflow_run: "https://github.com/nisarg89/Lean/actions/runs/41530290076"
+    new_material: >-
+      BF-only dependency configuration, root import facade, verification scripts, catalogue and
+      independent Comparator challenge. The repository certificate build and axiom audit passed;
+      independent Comparator checks remain optional and are not included in that result.
+catalogue_format:
+  schema: >-
+    https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json
+  organization_reference: "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/formalization.yaml"
+acknowledgements: >-
+  The certificate reuses Lean, Mathlib and the DKGM/PFR proofs identified in
+  ../THIRD_PARTY.md. They are proved library dependencies, not extra assumed literature
+  axioms. Matching the OpenAI catalogue organization does not imply OpenAI sponsorship or
+  endorsement.

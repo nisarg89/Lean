@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  Please cite the accompanying manuscript, "Balanced Fair Division", by
+  the authors listed below when referring to these formalized results.
+  This author list records manuscript authorship and does not assign
+  authorship of individual Lean files.
+type: software
+title: "Balanced Fair Division"
+authors:
+  - family-names: "Cookson"
+    given-names: "Benjamin"
+  - family-names: "de Raaij"
+    given-names: "Jakob"
+  - family-names: "Dupré la Tour"
+    given-names: "Max"
+  - family-names: "Shah"
+    given-names: "Nisarg"
+abstract: >-
+  Lean certificate accompanying the manuscript Balanced Fair Division.
+  It covers the balanced fair-division existence results, sharp swap
+  threshold, and supporting applications.
+license: Apache-2.0
+keywords:
+  - fair division
+  - Lean
+  - formal verification
+  - envy-freeness

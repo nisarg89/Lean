@@ -1,0 +1,77 @@
+name: Certificate regressions
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      clean:
+        description: Ignore the saved workspace cache for a fresh package check
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  catalogue:
+    runs-on: ubuntu-24.04
+    outputs:
+      papers: ${{ steps.matrix.outputs.papers }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Protect previously certified contracts
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.sha }}
+        run: python3 lean/scripts/check-catalogue.py --base-ref "$BASE_REF"
+      - name: Select every registered regression target
+        id: matrix
+        run: echo "papers=$(python3 lean/scripts/check-catalogue.py --matrix)" >> "$GITHUB_OUTPUT"
+  verify:
+    needs: catalogue
+    strategy:
+      fail-fast: false
+      matrix:
+        paper: ${{ fromJSON(needs.catalogue.outputs.papers) }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Install user-local Elan
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Reuse the pinned workspace incrementally
+        if: github.event_name != 'workflow_dispatch' || !inputs.clean
+        # Official actions/cache v4.2.4 release commit.
+        uses: actions/cache@0400d5f644dc74513175e3cd8d07132dd4860809
+        with:
+          path: |
+            ~/.elan/toolchains
+            lean/.lake
+          key: lean-${{ runner.os }}-${{ hashFiles('lean/lean-toolchain', 'lean/lake-manifest.json', 'lean/lakefile.toml', 'lean/third_party/**/lakefile.toml') }}-${{ matrix.paper }}-${{ github.sha }}
+          restore-keys: |
+            lean-${{ runner.os }}-${{ hashFiles('lean/lean-toolchain', 'lean/lake-manifest.json', 'lean/lakefile.toml', 'lean/third_party/**/lakefile.toml') }}-${{ matrix.paper }}-
+      - name: Provide sandbox tool for sealed Comparator checks
+        run: |
+          if ! command -v bwrap >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y bubblewrap
+          fi
+      - name: Build, audit and compare the manuscript
+        env:
+          PAPER: ${{ matrix.paper }}
+        run: python3 lean/scripts/verify-paper.py "$PAPER"
+  all-certificates:
+    if: always()
+    needs: [catalogue, verify]
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Require the entire catalogue
+        env:
+          CATALOGUE_RESULT: ${{ needs.catalogue.result }}
+          VERIFY_RESULT: ${{ needs.verify.result }}
+        run: test "$CATALOGUE_RESULT" = success && test "$VERIFY_RESULT" = success
