@@ -6,7 +6,6 @@ import FairDivision.BF.MainTheorems
 
 These aliases preserve the independently frozen Comparator propositions.
 They import the actual BF proofs, never the isolated Challenge statements.
-The stronger common-threshold reader statements remain in MainTheorems.
 -/
 
 set_option autoImplicit false

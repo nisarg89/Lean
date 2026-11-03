@@ -48,8 +48,7 @@ theorem identical_exists_augmented_commonThreshold
       simpa only [realPart_sdiff_dummy] using hMean i)
   exact ⟨A,t,by simpa only [hq',realPart_sdiff_dummy] using hA⟩
 
-/-- Theorem `identical-all-n`, retaining the manuscript's stronger common
-threshold conclusion, for arbitrary real-valued set valuations. -/
+/-- Auxiliary formulation of `identical-all-n` for arbitrary real-valued valuations. -/
 theorem identical_exists_balanced_commonThreshold
     (n m:ℕ) (hn:0<n) (v:Finset (Fin m)→ℝ):
     ∃(A:Allocation n m)(t:ℝ),IsBalanced A ∧ HasCommonThreshold v A t:=by

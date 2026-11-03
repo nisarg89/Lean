@@ -23,10 +23,8 @@ open FairDivision.Topology
 open FairDivision.Topology.Volovikov
 open FairDivision.Finite
 
-/-- For `m > p^rank`, the manuscript's stronger common-threshold conclusion follows from
-the no-equivariant-sphere-map obstruction for the corrected auxiliary space.
-The obstruction is deliberately an explicit hypothesis until its proof is
-compiled. -/
+/-- For `m > p^rank`, the auxiliary threshold formulation follows from
+the no-equivariant-sphere-map obstruction for the auxiliary space. -/
 theorem identicalPrimePower_commonThreshold_of_boundedDummy_noSphereMap
     (p rank m : ℕ) [NeZero p]
     (v : Finset (Fin m) → ℝ)

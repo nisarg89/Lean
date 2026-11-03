@@ -66,7 +66,7 @@ theorem swap_threshold_pair {m t q : ℕ} (ht : 1≤t) (hq : q≤2*t)
         simpa only [Finset.union_comm] using hFirst
     · exact ⟨X,Y,hXS,hYT,by omega,by omega,by omega,hSecond⟩
 
-/-- Section 7(i), exactly as stated: EVERY allocation into q-item bundles
+/-- Positive swap result: EVERY allocation into q-item bundles
 is t-swap envy-free when q≤2t, for arbitrary heterogeneous valuations. -/
 theorem every_equal_bundle_allocation_is_tSwapEF
     {n m t q : ℕ} (ht : 1≤t) (hq : q≤2*t)

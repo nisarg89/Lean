@@ -14,8 +14,7 @@ namespace FairDivision.Statements
 
 /-- Balanced Fair Division manuscript, Theorem `thm:identical-prime-power` (Section 3).
 For arbitrary, not necessarily monotone or normalized common valuations, a
-prime-power number of agents has a balanced EF[1,1] allocation. The proof
-may establish the stronger common-threshold property internally. -/
+prime-power number of agents admits a balanced EF[1,1] allocation. -/
 def identicalPrimePower : Prop :=
   ∀ (n m : ℕ), 0 < n → IsPrimePowerAgentCount n →
     ∀ v : Finset (Fin m) → ℝ,

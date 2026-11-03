@@ -5,7 +5,7 @@ import Mathlib.MeasureTheory.Integral.Prod
 /-!
 # Finite products of continuous uniform unit weights
 
-Concrete probability leaves used by BF Section 7. The law is restricted
+Probability lemmas for the manuscript's swap argument. The law is restricted
 Lebesgue measure on (0,1), whose mass is already one. Existing Mathlib
 finite-product measures provide coordinate laws, independence, and Tonelli;
 PFR supplies independence of functions of disjoint finite coordinate blocks.

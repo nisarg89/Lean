@@ -2,7 +2,7 @@ import FairDivision.BF.SwapUnconditionalProbability
 import FairDivision.BF.SwapFirstMomentAsymptotic
 
 /-!
-# BF Section 7(ii): the actual first-moment counterexample
+# Swap impossibility by the first-moment method
 
 Z is the finite sum of indicators of equal-q t-swap allocations, exactly
 as in the manuscript. The integrated fixed-allocation estimate bounds its

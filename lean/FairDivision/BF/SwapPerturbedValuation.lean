@@ -19,7 +19,7 @@ open FairDivision.BF
 
 variable {m q : ℕ}
 
-/-- Exactly the baseline polynomial in Section 7. -/
+/-- The baseline polynomial in the manuscript's swap argument. -/
 def base (m : ℕ) (S : Finset (Fin m)) : ℝ :=(2*(m : ℝ)+1)*S.card-(S.card : ℝ)^2
 
 def noise (q : ℕ) (W : Finset (Fin m)→ℝ) (S : Finset (Fin m)) : ℝ :=

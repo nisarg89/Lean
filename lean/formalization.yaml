@@ -112,22 +112,21 @@ alignment:
         - "FairDivision.BF.MainTheorems.identical_prime_power_common_threshold"
         - "FairDivision.BF.MainTheorems.identical_prime_power_ef11"
       scope: >-
-        Prime-power agent count with a prime base and positive exponent; all item counts; arbitrary
-        common real bundle valuation. The stronger export gives one common threshold for the same
-        balanced allocation.
+        For every prime-power agent count and every item count, arbitrary identical real-valued
+        bundle valuations admit a balanced EF[1,1] allocation.
     - source_label: "thm:identical-all-n"
       declarations:
         - "FairDivision.BF.MainTheorems.identical_common_threshold"
         - "FairDivision.BF.MainTheorems.identical_ef11"
-      scope: "Every positive agent count, including one, and every item count; arbitrary common real bundle valuation."
+      scope: "For every positive agent count and every item count, arbitrary identical valuations admit a balanced EF[1,1] allocation."
     - source_label: "thm:heterogeneous-all-m"
       declarations:
         - "FairDivision.BF.MainTheorems.heterogeneous_prime_power_ef11"
         - "FairDivision.BF.MainTheorems.heterogeneous_one_ef11"
         - "FairDivision.BF.MainTheorems.heterogeneous_one_or_prime_power_ef11"
       scope: >-
-        Independent arbitrary real bundle valuations for prime-power agent counts. Separate facades
-        include the elementary one-agent case.
+        For every prime-power agent count and every item count, arbitrary heterogeneous real-valued
+        bundle valuations admit a balanced EF[1,1] allocation. The one-agent case is also included.
   supplementary_results:
     - source_label: "thm:swap; sec:exchange"
       file: "FairDivision/BF/SwapThreshold.lean"
@@ -239,8 +238,7 @@ alignment:
 fidelity:
   divergences: >-
     Finite agents/items use Fin types. Positive agent counts and the positive-exponent
-    prime-power predicate are explicit. Common-threshold exports strengthen the EF[1,1]
-    conclusions; the one-agent heterogeneous case is separate. The sharp swap threshold is
+    prime-power predicate are explicit. The one-agent heterogeneous case is separate. The sharp swap threshold is
     included. Interpreting definitions are documented in docs/STATEMENTS.md.
 verification:
   accepted_source_snapshot:

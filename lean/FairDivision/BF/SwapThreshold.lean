@@ -2,7 +2,7 @@ import FairDivision.BF.SwapThresholdPositive
 import FairDivision.BF.SwapThresholdNegative
 
 /-!
-# Reader-facing sharp swap threshold from BF Section 7
+# Sharp swap threshold
 
 Review `SwapDefinitions` and the two theorem statements below against
 `thm:swap`. The proof uses exactly the manuscript's complementary-swap

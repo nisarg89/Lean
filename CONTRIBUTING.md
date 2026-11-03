@@ -12,7 +12,7 @@ Use the [top-down workflow](docs/TOP-DOWN-WORKFLOW.md) for new certificates.
 3. Reuse checked services and search Mathlib and external formalizations before
    implementing a standard external theorem. Record source revisions/licenses.
 4. Follow the manuscript argument. Record genuine repairs and authorized
-   alternatives in the paper's deviations document. Add module docstrings for
+   alternatives in the associated review. Add module docstrings for
    scope and paper correspondence; use short comments for non-obvious proof
    steps rather than narrating routine tactics.
 5. Check a small complete component as it is written. Then rebuild all released

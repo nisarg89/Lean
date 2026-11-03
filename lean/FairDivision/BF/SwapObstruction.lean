@@ -77,7 +77,7 @@ theorem post_mixed_majority {t k : ℕ}
   rw [hSC]
   omega
 
-/-- Effect of the event on EVERY legal swap, exactly as in Section 7. -/
+/-- Effect of the event on EVERY legal swap, as in the manuscript's swap argument. -/
 theorem obstruction_blocks_every_swap {t : ℕ} (hThreshold : 2*t+1≤q)
     (W : Finset (Fin m)→ℝ) (S T : Finset (Fin m)) (hST : Disjoint S T)
     (hS : S.card=q) (hT : T.card=q) (hObstruction : Obstruction q W S T)

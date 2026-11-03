@@ -1,20 +1,10 @@
 import FairDivision.BF.Certificate
 
 /-!
-# Final-statement axiom audit: balanced-EF1 certificate
+# Balanced Fair Division endpoint axiom audit
 
-This entrypoint imports exactly the BF certificate, then prints the axioms
-used transitively by its principal and secondary public results. It adds no
-proofs, imports no FE target, and is not imported by `Certificate.lean`.
-The removed query-complexity topic remains outside the certificate and this
-audit. The swap theorem (`thm:swap`, `sec:exchange`) is included, even though
-it is now numbered Section 6 after that removal.
-
-Run this source after the certificate's component artifacts exist. These
-commands specify the requested audit; their presence does not report that
-it has run or passed. Review the actual output, including any
-nonfoundational axioms, before release. The historical `BF/Audit.lean` is
-left unchanged.
+Prints the transitive axioms of all 47 released endpoints.
+`lean/scripts/check_axioms.py` checks the output against the permitted axioms.
 -/
 
 -- Sections 3–5: every theorem exported by the principal reader facade.
