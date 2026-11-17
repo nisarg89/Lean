@@ -30,8 +30,18 @@ def main():
             raise ValueError('Invalid paper identifier: ' + name)
         assert (ROOT / paper['reader']).is_file(), name + ': missing reader guide'
         if paper['regression_required']:
+            if name == 'RandomSizeMetricDistortion':
+                required = ['-j1', '-DElab.async=false', '-Dlinter.all=false',
+                            '-Ddebug.byAsSorry=false', '-Ddebug.proofAsSorry=false',
+                            '-Ddebug.skipKernelTC=false']
+                assert paper.get('dependency_aware_audits') is True
+                assert paper.get('target') == 'MetricDistortion.StarCertificate'
+                assert paper.get('audit_lean_args') == required
+                assert paper.get('additional_audits') == ['../Library/Voting/Audit.lean', '../Library/Voting/Distortion/Audit.lean']
             assert paper['target'] and paper['audit_file'], name + ': missing executable target/audit'
             assert (ROOT / 'lean' / paper['audit_file']).is_file()
+            for audit in paper.get('additional_audits', []):
+                assert (ROOT / 'lean' / audit).is_file(), name + ': missing additional audit'
             assert (ROOT / paper['audit_checker']).is_file()
             endpoints = read_json(paper['endpoints'])
             assert endpoints and len(set(endpoints)) == len(endpoints)

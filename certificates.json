@@ -4,15 +4,40 @@
   "papers": {
     "BF": {
       "title": "Balanced Fair Division",
-      "reader": "README.md",
+      "reader": "manuscripts/balanced-fair-division/README.md",
       "status": "build-and-axiom-audit-passed",
       "regression_required": true,
       "target": "FairDivision.BF.Certificate",
-      "audit_file": "FairDivision/BF/CertificateAudit.lean",
+      "audit_file": "../manuscripts/BalancedFairDivision/CertificateAudit.lean",
       "endpoints": "lean/verification/expected-endpoints.json",
       "audit_checker": "lean/scripts/check_axioms.py",
       "comparator": "lean/ComparatorChallenges/BalancedFairDivision.json",
       "semantic_baseline": null
+    },
+    "RandomSizeMetricDistortion": {
+      "title": "Improving Randomized Metric Distortion to 2.1361",
+      "reader": "manuscripts/RandomSizeMetricDistortion/README.md",
+      "status": "build-and-axiom-audit-passed",
+      "regression_required": true,
+      "target": "MetricDistortion.StarCertificate",
+      "audit_file": "../manuscripts/RandomSizeMetricDistortion/CertificateAudit.lean",
+      "endpoints": "lean/verification/metric-distortion-endpoints.json",
+      "audit_checker": "lean/scripts/check-metric-audit.py",
+      "comparator": "lean/ComparatorChallenges/RandomSizeMetricDistortionRegression.json",
+      "semantic_baseline": null,
+      "additional_audits": [
+        "../Library/Voting/Audit.lean",
+        "../Library/Voting/Distortion/Audit.lean"
+      ],
+      "dependency_aware_audits": true,
+      "audit_lean_args": [
+        "-j1",
+        "-DElab.async=false",
+        "-Dlinter.all=false",
+        "-Ddebug.byAsSorry=false",
+        "-Ddebug.proofAsSorry=false",
+        "-Ddebug.skipKernelTC=false"
+      ]
     }
   }
 }

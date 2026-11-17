@@ -1,6 +1,7 @@
 # Third-party sources and dependencies
 
-This release contains the Lean certificate accompanying *Balanced Fair Division*.
+This release contains the Lean certificates accompanying *Balanced Fair Division*
+and *Improving Randomized Metric Distortion to 2.1361*.
 Original project code is distributed under Apache-2.0; see the repository
 `LICENSE` and `lean/LICENSE`. Borrowed sources and external dependencies retain
 their own licenses and notices. No claim of authorship of upstream work is made.
@@ -39,7 +40,7 @@ the pinned upstream license and is byte-identical.
 - Original file:
   [`PFR/Mathlib/Probability/Independence/Kernel/IndepFun.lean`](https://github.com/teorth/pfr/blob/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f/PFR/Mathlib/Probability/Independence/Kernel/IndepFun.lean).
 - Local adapted source:
-  [`lean/FairDivision/Probability/FiniteDisjointBlocks.lean`](lean/FairDivision/Probability/FiniteDisjointBlocks.lean).
+  [`Library/FairDivision/Probability/FiniteDisjointBlocks.lean`](Library/FairDivision/Probability/FiniteDisjointBlocks.lean).
 - License: Apache-2.0, retained verbatim in
   [`lean/third_party/pfr-probability-source/LICENSE`](lean/third_party/pfr-probability-source/LICENSE).
 
@@ -63,6 +64,12 @@ its original license and source notices remain in the fetched package,
 including `lean/.lake/packages/mathlib/LICENSE`. The Lean distribution
 retains its own license and bundled-component notices. This repository does
 not redistribute a Lean toolchain or compiled Mathlib cache.
+
+The metric-distortion and shared voting proofs use the pinned Mathlib APIs,
+including `Sion.exists_isSaddlePointOn` for the finite-simplex minimax
+argument and `ProbabilityTheory.hasSubgaussianMGF_of_mem_Icc` for the
+exponential-weights analysis. These are imported Mathlib declarations;
+their source remains in the fetched Mathlib package.
 
 ## Mathlib companion packages
 

@@ -32,20 +32,45 @@ def main():
     paper = catalogue['papers'][args.paper]
     if not paper['regression_required'] or not paper['target']:
         parser.error('This paper is not an executable certificate target')
+    if args.paper == 'RandomSizeMetricDistortion':
+        required = ['-j1', '-DElab.async=false', '-Dlinter.all=false',
+                    '-Ddebug.byAsSorry=false', '-Ddebug.proofAsSorry=false',
+                    '-Ddebug.skipKernelTC=false']
+        if (paper.get('dependency_aware_audits') is not True or
+            paper.get('target') != 'MetricDistortion.StarCertificate' or
+            paper.get('audit_lean_args') != required or
+            paper.get('additional_audits') != ['../Library/Voting/Audit.lean', '../Library/Voting/Distortion/Audit.lean']):
+            raise ValueError('metric audit paths or required Lean options changed')
     logs = WORKSPACE / 'artifacts/verification' / args.paper
     logs.mkdir(parents=True, exist_ok=True)
     # No previous success-looking reports survive a failed new invocation.
     for name in ['build.log', 'axioms.log', 'comparator.log', 'cache.log']:
         (logs / name).unlink(missing_ok=True)
+    for path in logs.glob('axioms-extra-*.log'):
+        path.unlink()
     lock = WORKSPACE / 'lake-manifest.json'
     before = lock.read_bytes()
     try:
         if not args.skip_cache:
             run(['lake', 'exe', 'cache', 'get'], logs / 'cache.log')
         run(['lake', 'build', '+' + paper['target']], logs / 'build.log')
-        run(['lake', 'env', 'lean', paper['audit_file']], logs / 'axioms.log')
-        run([sys.executable, str(ROOT / paper['audit_checker']), str(logs / 'axioms.log'),
-             '--expected', str(ROOT / paper['endpoints'])])
+        audit_args = paper.get('audit_lean_args', [])
+        if paper.get('dependency_aware_audits', False):
+            primary = ['lake', 'lean', paper['audit_file']]
+            if audit_args: primary.extend(['--', *audit_args])
+        else:
+            primary = ['lake', 'env', 'lean', paper['audit_file']]
+        run(primary, logs / 'axioms.log')
+        checker = [sys.executable, str(ROOT / paper['audit_checker']), str(logs / 'axioms.log'),
+                   '--expected', str(ROOT / paper['endpoints'])]
+        for i, audit in enumerate(paper.get('additional_audits', []), 1):
+            extra = logs / ('axioms-extra-' + str(i) + '.log')
+            # `lake lean` builds needed imports, including newly added shared facades.
+            command = ['lake', 'lean', audit]
+            if audit_args: command.extend(['--', *audit_args])
+            run(command, extra)
+            checker.extend(['--additional-log', str(extra)])
+        run(checker)
         baseline_ref = paper['semantic_baseline']
         if baseline_ref is None:
             if paper['status'] == 'certified':

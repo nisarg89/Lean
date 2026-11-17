@@ -62,8 +62,46 @@ scope = "leanprover-community"
 rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
 
 [[lean_lib]]
+name = "FairDivisionFacade"
+srcDir = "."
+roots = ["FairDivision"]
+globs = ["FairDivision"]
+
+[[lean_lib]]
 name = "FairDivision"
+srcDir = "../Library"
+globs = ["FairDivision.+"]
 # Statement challenges are separate from the default proof target.
 [[lean_lib]]
 name = "ComparatorChallenges"
 globs = ["ComparatorChallenges.+"]
+
+[[lean_lib]]
+name = "Voting"
+srcDir = "../Library"
+globs = ["Voting", "Voting.+"]
+weakLeanArgs = ["-j1", "-DElab.async=false", "-Dlinter.all=false", "-Ddebug.byAsSorry=false", "-Ddebug.proofAsSorry=false", "-Ddebug.skipKernelTC=false"]
+
+[[lean_lib]]
+name = "RandomSizeMetricDistortion"
+srcDir = "../manuscripts"
+globs = ["RandomSizeMetricDistortion.+"]
+weakLeanArgs = ["-j1", "-DElab.async=false", "-Dlinter.all=false", "-Ddebug.byAsSorry=false", "-Ddebug.proofAsSorry=false", "-Ddebug.skipKernelTC=false"]
+
+[[lean_lib]]
+name = "BalancedFairDivision"
+srcDir = "../manuscripts"
+globs = ["BalancedFairDivision.+"]
+
+[[lean_lib]]
+name = "BFCompatibility"
+srcDir = "."
+roots = ["FairDivision.BF"]
+globs = ["FairDivision.BF.Certificate"]
+
+[[lean_lib]]
+name = "MetricDistortionCompatibility"
+srcDir = "."
+roots = ["MetricDistortion"]
+globs = ["MetricDistortion.StarCertificate"]
+weakLeanArgs = ["-j1", "-DElab.async=false", "-Dlinter.all=false", "-Ddebug.byAsSorry=false", "-Ddebug.proofAsSorry=false", "-Ddebug.skipKernelTC=false"]

@@ -25,7 +25,7 @@ This release includes the following upstream work:
    Attribution: the upstream PFR contributors.
    License: Apache-2.0, preserved in
    lean/third_party/pfr-probability-source/LICENSE.
-   Local path: lean/FairDivision/Probability/FiniteDisjointBlocks.lean.
+   Local path: Library/FairDivision/Probability/FiniteDisjointBlocks.lean.
    The extraction retains the grouped-independence proof, adapts the
    module/import exposure header, and adds local measure-level wrappers.
 
