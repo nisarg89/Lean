@@ -1,23 +1,27 @@
 # Balanced Fair Division in Lean
 
-Lean 4 formalization of the **Balanced Fair Division manuscript**, by Benjamin Cookson, Jakob de Raaij, Max Dupré la Tour, and Nisarg Shah.
+Lean 4 formalization of *Balanced Fair Division* by Benjamin Cookson, Jakob de Raaij, Max Dupré la Tour, and Nisarg Shah.
 
-Arbitrary identical valuations admit balanced EF[1,1] allocations for every positive number of agents; arbitrary heterogeneous valuations admit them for prime-power agent counts. The formalization also covers the sharp swap theorem and the manuscript’s partition and graph applications.
+The paper asks when indivisible items can be divided into bundles of nearly equal size while controlling envy. The [Lean certificate](../BalancedFairDivision/Certificate.lean) assembles the existence theorems, the sharp swap result, and the applications.
 
-## Formal statements
+## What Lean verifies
 
-Balanced allocations have bundle sizes differing by at most one. EF[1,1] allows removing at most one item from each of two compared bundles to eliminate envy.
+In a **balanced** allocation, bundle sizes differ by at most one. **EF[1,1]** means that envy between two bundles can be eliminated by removing at most one item from each. The precise notions are in [Definitions.lean](../../Library/FairDivision/Definitions.lean).
 
-- [MainTheorems.lean](MainTheorems.lean): principal existence theorems.
-- [Definitions.lean](../../Library/FairDivision/Definitions.lean): allocation and fairness definitions.
-- [SwapThreshold.lean](SwapThreshold.lean): the sharp swap theorem.
-- [Applications](Applications/): partition and graph results.
+| Result | Guarantee | Lean source |
+| --- | --- | --- |
+| Identical valuations | A balanced EF[1,1] allocation exists for every positive number of agents. | [MainTheorems.lean](../BalancedFairDivision/MainTheorems.lean) |
+| Heterogeneous valuations | A balanced EF[1,1] allocation exists for every prime-power number of agents. | [MainTheorems.lean](../BalancedFairDivision/MainTheorems.lean) |
+| Size-preserving swaps | Every equal-size allocation is $t$-swap envy-free when each bundle has at most $2t$ items. Larger bundles admit counterexamples. | [SwapThreshold.lean](../BalancedFairDivision/SwapThreshold.lean) |
+| Bounded value spread | If adding an item changes the value by at most $L$, a balanced partition has spread at most $2L$, or $L$ for monotone functions. Both bounds are sharp. | [Existence](../BalancedFairDivision/Applications/NonlinearDiscrepancy.lean) and [sharpness](../BalancedFairDivision/Applications/DiscrepancySharpness.lean) |
+| Graph densities | Balanced partitions attain sharp bounds on the spread of induced-subgraph densities. | [DensityExistence.lean](../BalancedFairDivision/Applications/DensityExistence.lean) |
+| Equal graph parameters | Disjoint induced subgraphs of the prescribed order can have equal clique, independence, or chromatic numbers. | [EqualParametersGraphs.lean](../BalancedFairDivision/Applications/EqualParametersGraphs.lean) |
 
-## Axioms
-
-The certificate uses only Lean’s standard axioms: `propext`, `Classical.choice`, and `Quot.sound`. The [axiom audit](CertificateAudit.lean) checks all 47 released results.
+The [applications](../BalancedFairDivision/Applications/) also cover equal capacities and coverage. The [axiom audit](../BalancedFairDivision/CertificateAudit.lean) checks all 47 released results and reports only `propext`, `Classical.choice`, and `Quot.sound`.
 
 ## Verification
+
+### Build and audit from source
 
 Install [Elan](https://github.com/leanprover/elan) and Python 3. The workspace pins Lean **4.35.0** in [lean-toolchain](../../lean/lean-toolchain) and library revisions in [lake-manifest.json](../../lean/lake-manifest.json).
 
@@ -27,11 +31,20 @@ From the repository root:
 python3 lean/scripts/verify-paper.py BF
 ```
 
-This builds the certificate, audits its axioms, and checks that the dependency lock is unchanged. The previously published layout’s [build and audit passed in CI](https://github.com/nisarg89/Lean/actions/runs/41591365027).
+The command builds the certificate, runs the axiom audit, and checks the dependency lock. The earlier repository layout also passed its [build and audit in CI](https://github.com/nisarg89/Lean/actions/runs/41591365027).
+
+### Download the compiled cache
+
+The [Balanced Fair Division GitHub release](https://github.com/nisarg89/Lean/releases/tag/balanced-fair-division-932c28c) includes the shared FairDivision cache, the paper cache, `SHA256SUMS`, and restore instructions. The restore test used Linux x86-64, Lean 4.35.0, and the pinned dependency artifacts. Lake uses the archives as trusted compiled imports.
 
 ## Proof layout
 
-The [certificate target](Certificate.lean) assembles the manuscript’s proofs. The [Topology](Topology/) and [Finite](Finite/) folders contain supporting parts of the paper’s argument. Reusable mathematics is organized under [FairDivision](../../Library/FairDivision/). [ComparatorChallenges](../../lean/ComparatorChallenges/) contains independently stated existence results for optional comparison. Each certificate builds its own import closure and reuses shared definitions and proofs. The old `FairDivision.BF.Certificate` module remains available as a compatibility entry point.
+- [Topology](../BalancedFairDivision/Topology/) and [Finite](../BalancedFairDivision/Finite/) contain supporting steps of the paper’s argument.
+- [Applications](../BalancedFairDivision/Applications/) contains the partition and graph proofs.
+- [Library/FairDivision](../../Library/FairDivision/) contains reusable definitions and results.
+- [ComparatorChallenges](../../lean/ComparatorChallenges/) contains independently stated existence results for optional comparison.
+
+The existing `FairDivision.BF.Certificate` import continues to work as a compatibility entry point.
 
 ## License and credits
 

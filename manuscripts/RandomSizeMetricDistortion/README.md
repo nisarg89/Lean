@@ -87,9 +87,10 @@ artifacts, and choose separately whether to rebuild the pinned dependencies.
 
 ### Optional compiled cache
 
-The shared voting and paper caches can be restored from the release assets
-`shared-cache-lean-4.35.0.tar` and `metric-cache-lean-4.35.0.tar`. This procedure
-was tested on Linux x86-64 with the pinned dependency packages and their compiled
+Download `shared-cache-lean-4.35.0.tar`, `metric-cache-lean-4.35.0.tar`, and
+`SHA256SUMS` from the [metric-distortion GitHub release](https://github.com/nisarg89/Lean/releases/tag/metric-distortion-932c28c).
+Use the source checkout at that release tag. The restore procedure was tested
+on Linux x86-64 with the pinned dependency packages and their compiled
 artifacts already available in `lean/.lake/packages`. Other platforms and
 dependency setup from scratch have not been tested with these assets.
 
