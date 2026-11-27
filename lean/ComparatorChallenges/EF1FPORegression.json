@@ -1,0 +1,13 @@
+{
+  "challenge_module": "ComparatorChallenges.EF1FPO",
+  "solution_module": "EF1FPO.Certificate",
+  "theorem_names": [
+    "EF1FPO.ef1_fpo_polynomial"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

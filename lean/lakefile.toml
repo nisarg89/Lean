@@ -105,3 +105,14 @@ srcDir = "."
 roots = ["MetricDistortion"]
 globs = ["MetricDistortion.StarCertificate"]
 weakLeanArgs = ["-j1", "-DElab.async=false", "-Dlinter.all=false", "-Ddebug.byAsSorry=false", "-Ddebug.proofAsSorry=false", "-Ddebug.skipKernelTC=false"]
+
+[[lean_lib]]
+name = "OAI"
+srcDir = "third_party/openai-math"
+globs = ["OAI.+"]
+moreLeanArgs = ["-DautoImplicit=false", "-DmaxHeartbeats=100000000"]
+
+[[lean_lib]]
+name = "EF1FPO"
+srcDir = "../manuscripts"
+globs = ["EF1FPO.+"]

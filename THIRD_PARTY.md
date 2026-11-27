@@ -1,7 +1,6 @@
 # Third-party sources and dependencies
 
-This release contains the Lean certificates accompanying *Balanced Fair Division*
-and *Improving Randomized Metric Distortion to 2.1361*.
+This release contains the Lean certificates accompanying *Balanced Fair Division*, *Improving Randomized Metric Distortion to 2.1361*, and *A Polynomial-Time Algorithm for Fair and Efficient Allocation of Indivisible Goods*.
 Original project code is distributed under Apache-2.0; see the repository
 `LICENSE` and `lean/LICENSE`. Borrowed sources and external dependencies retain
 their own licenses and notices. No claim of authorship of upstream work is made.
@@ -51,6 +50,12 @@ adaptation. The original source header at this revision has no additional
 copyright or author banner. The PFR license text was compared with the pinned
 upstream license and is byte-identical. The full PFR project is not included
 or required.
+
+## OpenAI sign-recovery program and binary computation library
+
+The EF1 and fPO certificate uses OpenAI's Lean sign-recovery program, its correctness and cost proofs, and finite-stack procedures for arithmetic, list operations, and control. These Lean sources are attributed to OpenAI and the contributors to its math repository. They retain their original module names and source text. The integration builds them with this repository's pinned Lean and Mathlib. The upstream Lean project uses Lean 4.34.1. [OpenAI source tree at the imported revision](https://github.com/openai/math/tree/3344da59991ed94f9ba711217b29c1d760badfa6/lean)
+
+The source snapshot and its Apache License, Version 2.0, are included under the proof project's third-party directory. [Vendored sources](lean/third_party/openai-math/) · [License](lean/third_party/openai-math/LICENSE)
 
 ## Lean and Mathlib
 

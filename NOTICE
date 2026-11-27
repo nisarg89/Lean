@@ -29,6 +29,13 @@ This release includes the following upstream work:
    The extraction retains the grouped-independence proof, adapts the
    module/import exposure header, and adds local measure-level wrappers.
 
+3. OpenAI sign-recovery certificate and binary computation procedures
+   The EF1 and fPO certificate includes Lean proof sources from OpenAI and
+   the contributors to https://github.com/openai/math at revision
+   3344da59991ed94f9ba711217b29c1d760badfa6. The sources retain their
+   original module paths and contents. The upstream Apache License,
+   Version 2.0 is included at lean/third_party/openai-math/LICENSE.
+
 The build uses Lean and Mathlib and their pinned companion packages.
 They are fetched separately and retain their own licenses and notices.
 Those packages use Apache-2.0 except lean4-cli (Cli), which uses MIT and

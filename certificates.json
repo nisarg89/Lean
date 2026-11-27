@@ -38,6 +38,27 @@
         "-Ddebug.proofAsSorry=false",
         "-Ddebug.skipKernelTC=false"
       ]
+    },
+    "EF1FPO": {
+      "title": "A Polynomial-Time Algorithm for Fair and Efficient Allocation of Indivisible Goods",
+      "reader": "manuscripts/EF1FPO/README.md",
+      "status": "build-and-axiom-audit-passed",
+      "regression_required": true,
+      "target": "EF1FPO.Certificate",
+      "audit_file": "../manuscripts/EF1FPO/CertificateAudit.lean",
+      "endpoints": "lean/verification/ef1-fpo-endpoints.json",
+      "audit_checker": "lean/scripts/check-ef1-fpo-audit.py",
+      "comparator": "lean/ComparatorChallenges/EF1FPORegression.json",
+      "semantic_baseline": null,
+      "dependency_aware_audits": true,
+      "audit_lean_args": [
+        "-j1",
+        "-DElab.async=false",
+        "-Dlinter.all=false",
+        "-Ddebug.byAsSorry=false",
+        "-Ddebug.proofAsSorry=false",
+        "-Ddebug.skipKernelTC=false"
+      ]
     }
   }
 }
